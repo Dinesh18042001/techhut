@@ -23,7 +23,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <div className="logo">
-            <img src="./src/assets/img/logo.png" alt="Logo" />
+            <img src="./assets/img/logo.png" alt="Logo" />
           </div>
 
           {/* Mobile toggle button */}
