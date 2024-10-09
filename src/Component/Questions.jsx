@@ -17,7 +17,7 @@ export default function Questions() {
                 </p>
 
                 <div className="qusetion-img">
-                  <img src="/src/assets/question/question.png" alt="" />
+                  <img src="./assets/question/question.png" alt="" />
                 </div>
               </div>
             </div>

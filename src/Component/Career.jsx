@@ -21,7 +21,7 @@ export default function Career() {
                 <div className="col-lg-6 mb-4">
                     <div className="carrer-card h-100">
                         <div className="carrer-card-tittle mb-2">
-                            <img src="/src/assets/caeeer/tittle-1.png" alt="" />
+                            <img src="./assets/caeeer/tittle-1.png" alt="" />
                             <h5>Software Programmer</h5>
                         </div>
 
@@ -46,7 +46,7 @@ export default function Career() {
                 <div className="col-lg-6 mb-4">
                     <div className="carrer-card h-100">
                         <div className="carrer-card-tittle mb-2">
-                            <img src="/src/assets/caeeer/tittle-2.png" alt="" />
+                            <img src="./assets/caeeer/tittle-2.png" alt="" />
                             <h5>Digital Marketer</h5>
                         </div>
 

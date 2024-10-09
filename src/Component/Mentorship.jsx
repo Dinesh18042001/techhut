@@ -29,10 +29,10 @@ export default function Mentorship() {
                 </p>
               </div>
               <div className="mentorship-card-img">
-                <img src="/src/assets/mentorship/card1.png" alt="" />
+                <img src="./assets/mentorship/card1.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
-                <img src="/src/assets/mentorship/card-icon1.png" alt="" />
+                <img src="./assets/mentorship/card-icon1.png" alt="" />
               </div>
             </div>
           </div>
@@ -48,10 +48,10 @@ export default function Mentorship() {
                 </p>
               </div>
               <div className="mentorship-card-img">
-                <img src="/src/assets/mentorship/card2.png" alt="" />
+                <img src="./assets/mentorship/card2.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
-                <img src="/src/assets/mentorship/card-icon2.png" alt="" />
+                <img src="./assets/mentorship/card-icon2.png" alt="" />
               </div>
             </div>
           </div>
@@ -67,10 +67,10 @@ export default function Mentorship() {
                 </p>
               </div>
               <div className="mentorship-card-img">
-                <img src="/src/assets/mentorship/card3.png" alt="" />
+                <img src="./assets/mentorship/card3.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
-                <img src="/src/assets/mentorship/card-icon3.png" alt="" />
+                <img src="./assets/mentorship/card-icon3.png" alt="" />
               </div>
             </div>
           </div>
@@ -86,10 +86,10 @@ export default function Mentorship() {
                 </p>
               </div>
               <div className="mentorship-card-img">
-                <img src="/src/assets/mentorship/card4.png" alt="" />
+                <img src="./assets/mentorship/card4.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
-                <img src="/src/assets/mentorship/card-icon2.png" alt="" />
+                <img src="./assets/mentorship/card-icon2.png" alt="" />
               </div>
             </div>
           </div>
@@ -101,10 +101,10 @@ export default function Mentorship() {
                 <p>Timely monitoring to help you excel in your career.</p>
               </div>
               <div className="mentorship-card-img">
-                <img src="/src/assets/mentorship/card5.png" alt="" />
+                <img src="./assets/mentorship/card5.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
-                <img src="/src/assets/mentorship/card-icon1.png" alt="" />
+                <img src="./assets/mentorship/card-icon1.png" alt="" />
               </div>
             </div>
           </div>
@@ -120,10 +120,10 @@ export default function Mentorship() {
                 </p>
               </div>
               <div className="mentorship-card-img">
-                <img src="/src/assets/mentorship/card6.png" alt="" />
+                <img src="./assets/mentorship/card6.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
-                <img src="/src/assets/mentorship/card-icon2.png" alt="" />
+                <img src="./assets/mentorship/card-icon2.png" alt="" />
               </div>
             </div>
           </div>

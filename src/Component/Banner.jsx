@@ -6,7 +6,7 @@ export default function Banner() {
       <div className="baneer-section">
         <div className="banner-main-box position-relative">
           <div className="banner-img">
-            <img src="/src/assets/banner/banner-bg.png" alt="" />
+            <img src="./assets/banner/banner-bg.png" alt="" />
           </div>
 
           <div className="banner-info">
@@ -16,7 +16,7 @@ export default function Banner() {
                 <div className="col-lg-7">
 
                   <h2>Turn your Passion into a New Career Path</h2>
-                  <img src="/src/assets/banner/line-img.png" alt="" />
+                  <img src="./assets/banner/line-img.png" alt="" />
 
                   <div className="row mt-5">
                     <div className="col-md-6 col-12 mb-4">
@@ -88,7 +88,7 @@ export default function Banner() {
                         <p className="mb-2">100+ Mentors</p>
                         <p className="mb-2">1200+ Queries Resolved</p>
                         <div className="banner-card-img d-flex justify-content-center mt-4">
-                          <img src="/src/assets/banner/card-img1.png" alt="" />
+                          <img src="./assets/banner/card-img1.png" alt="" />
                         </div>
                       </div>
                     </div>
@@ -101,7 +101,7 @@ export default function Banner() {
                               <p>Need Advice ? Connect with our mentors</p>
                             </div>
                             <div className="card-img">
-                              <img src="/src/assets/banner/card-img2.png" alt="" />
+                              <img src="./assets/banner/card-img2.png" alt="" />
                             </div>
                           </div>
                         </div>
@@ -112,7 +112,7 @@ export default function Banner() {
                               <p>Need Advice ? Connect with our mentors</p>
                             </div>
                             <div className="card-img">
-                              <img src="/src/assets/banner/card-img3.png" alt="" />
+                              <img src="./assets/banner/card-img3.png" alt="" />
                             </div>
                           </div>
                         </div>
@@ -130,7 +130,7 @@ export default function Banner() {
                               <p>Stay updated on latest trends</p>
                             </div>
                             <div className="card-img">
-                              <img src="/src/assets/banner/card-img4.png" alt="" />
+                              <img src="./assets/banner/card-img4.png" alt="" />
                             </div>
                           </div>
                         </div>
@@ -141,7 +141,7 @@ export default function Banner() {
                               <p>Daily Problem Challenges</p>
                             </div>
                             <div className="card-img">
-                              <img src="/src/assets/banner/card-img5.png" alt="" />
+                              <img src="./assets/banner/card-img5.png" alt="" />
                             </div>
                           </div>
                         </div>
@@ -153,7 +153,7 @@ export default function Banner() {
                         <h6 className="mb-2">Roadmaps</h6>
                         <p className="mb-2">Solve skill based roadmaps</p>
                         <div className="banner-card-img d-flex justify-content-center mt-4">
-                          <img src="/src/assets/banner/card-img6.png" alt="" />
+                          <img src="./assets/banner/card-img6.png" alt="" />
                         </div>
                       </div>
                     </div>

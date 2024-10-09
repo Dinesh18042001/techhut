@@ -38,7 +38,7 @@ export default function Companies() {
           <div className="item">
             <div className="companies-logo-img">
               <img
-                src="/src/assets/companies/img1.png"
+                src="./assets/companies/img1.png"
                 alt="Company 1"
                 className="img-fluid"
               />
@@ -47,7 +47,7 @@ export default function Companies() {
           <div className="item">
             <div className="companies-logo-img">
               <img
-                src="/src/assets/companies/img2.png"
+                src="./assets/companies/img2.png"
                 alt="Company 2"
                 className="img-fluid"
               />
@@ -56,7 +56,7 @@ export default function Companies() {
           <div className="item">
             <div className="companies-logo-img">
               <img
-                src="/src/assets/companies/img3.png"
+                src="./assets/companies/img3.png"
                 alt="Company 3"
                 className="img-fluid"
               />
@@ -65,7 +65,7 @@ export default function Companies() {
           <div className="item">
             <div className="companies-logo-img">
               <img
-                src="/src/assets/companies/img4.png"
+                src="./assets/companies/img4.png"
                 alt="Company 4"
                 className="img-fluid"
               />
@@ -74,7 +74,7 @@ export default function Companies() {
           <div className="item">
             <div className="companies-logo-img">
               <img
-                src="/src/assets/companies/img5.png"
+                src="./assets/companies/img5.png"
                 alt="Company 5"
                 className="img-fluid"
               />
@@ -83,7 +83,7 @@ export default function Companies() {
           <div className="item">
             <div className="companies-logo-img">
               <img
-                src="/src/assets/companies/img6.png"
+                src="./assets/companies/img6.png"
                 alt="Company 5"
                 className="img-fluid"
               />
