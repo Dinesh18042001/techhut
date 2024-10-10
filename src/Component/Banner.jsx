@@ -1,4 +1,11 @@
 import React from "react";
+import CareerPath from "./CareerPath";
+import Mentors from "./Mentors";
+import Career from "./Career";
+import Mentorship from "./Mentorship";
+import Companies from "./Companies";
+import AlumniSay from "./AlumniSay";
+import Questions from "./Questions";
 
 export default function Banner() {
   return (
@@ -70,9 +77,9 @@ export default function Banner() {
                     <div className="banner-btn-1">
                       <a href="#">Join Now</a>
                     </div>
-                    <div className="banner-btn-2">
+                    {/* <div className="banner-btn-2">
                       <a href="#">Download Syllabus <i class="fa-solid fa-download"></i></a>
-                    </div>
+                    </div> */}
                   </div>
                 </div>
 
@@ -166,6 +173,13 @@ export default function Banner() {
           </div>
         </div>
       </div>
+      <CareerPath/>
+      <Mentors/>
+      <Career/>
+      <Mentorship/>
+      <Companies/>
+      <AlumniSay/>
+      <Questions/>
     </>
   );
 }

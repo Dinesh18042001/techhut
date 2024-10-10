@@ -28,11 +28,15 @@ export default function Companies() {
   return (
     <div className="companies-section mb-5">
       <div className="container">
-        <div className="companies-section-title">
-          <h2 className="text-center mb-5">
+        <div className="companies-section-title mb-5">
+          <h2 className="text-center ">
             Trusted by <span>50+</span> companies and millions of learners
             around the world
           </h2>
+          <div className="companies-section-title-img text-center">
+ <img src="./assets/banner/line-img.png" alt="" />
+          </div>
+
         </div>
         <OwlCarousel className="owl-theme" {...carouselOptions}>
           <div className="item">

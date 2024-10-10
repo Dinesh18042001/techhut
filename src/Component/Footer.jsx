@@ -23,7 +23,7 @@ export default function Footer() {
                 </div>
 
                 <div className="col-lg-4">
-                  <div className="socal-link d-flex gap-3 justify-content-center justify-content-lg-start">
+                  <div className="socal-link d-flex gap-3 justify-content-center justify-content-lg-start sm-mt-4">
                     <span>
                       <i class="fa-brands fa-facebook-f"></i>
                     </span>

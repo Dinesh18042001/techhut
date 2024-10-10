@@ -54,7 +54,7 @@ export default function CareerPath() {
                         <i class="fa-regular fa-face-smile"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Facing issue in getting resume shortlisted?</p>
                   </div>
                 </div>
               </div>
@@ -77,7 +77,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-comments"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Hesitation during HR Technical Interview?</p>
                   </div>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-bolt"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Not able to find Good Job Referrals?</p>
                   </div>
                 </div>
 
@@ -101,7 +101,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-graduation-cap"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Not getting Interview calls?</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-paper-plane"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Not able to Find Good Job Opportunities?</p>
                   </div>
                 </div>
                 <div className="silider-box mb-3">
@@ -124,7 +124,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-rocket"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Are you scared of programming?</p>
                   </div>
                 </div>
               </div>
