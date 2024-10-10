@@ -1,5 +1,4 @@
 import React from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import CareerpathMain from "./CareerpathMain";
 import Questions from "./Questions";
@@ -50,12 +49,7 @@ export default function Blogs() {
               </div>
             </div>
 
-            <motion.div
-              initial={{ x: 200 }}
-              whileInView={{ x: 0 }}
-              transition={{ duration: 1.3 }}
-              className="col-lg-4 text-center"
-            >
+            <div className="col-lg-4 text-center">
               <div className="blog-img">
                 <img
                   src="./assets/blogs/blog1.png"
@@ -63,23 +57,18 @@ export default function Blogs() {
                   className="img-fluid mx-auto d-block"
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
 
           <div className="row align-items-center mb-5">
             <div className="col-lg-4 order-lg-1 order-2 text-center">
-              <motion.div
-                initial={{ x: -200 }}
-                whileInView={{ x: 0 }}
-                transition={{ duration: 1.3 }}
-                className="blog-img"
-              >
+              <div className="blog-img">
                 <img
                   src="./assets/blogs/blog2.png"
                   alt=""
                   className="img-fluid"
                 />
-              </motion.div>
+              </div>
             </div>
 
             <div className="col-lg-8 order-lg-2 order-1">
@@ -139,32 +128,22 @@ export default function Blogs() {
                 </div>
               </div>
             </div>
-            <motion.div
-              initial={{ x: 200 }}
-              whileInView={{ x: 0 }}
-              transition={{ duration: 1.3 }}
-              className="col-lg-4 text-center"
-            >
+            <div className="col-lg-4 text-center">
               <div className="blog-img">
                 <img src="./assets/blogs/blog3.png" alt="" />
               </div>
-            </motion.div>
+            </div>
           </div>
 
           <div className="row align-items-center mb-5">
             <div className="col-lg-4 order-lg-1 order-2 text-center">
-              <motion.div
-                initial={{ x: -200 }}
-                whileInView={{ x: 0 }}
-                transition={{ duration: 1.3 }}
-                className="blog-img"
-              >
+              <div className="blog-img">
                 <img
                   src="./assets/blogs/blog4.png"
                   alt=""
                   className="img-fluid"
                 />
-              </motion.div>
+              </div>
             </div>
 
             <div className="col-lg-8 order-lg-2 order-1">
