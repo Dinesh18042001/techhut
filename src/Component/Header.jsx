@@ -103,7 +103,7 @@ export default function Header() {
       >
         <div className="offcanvas-header">
           <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-            <img src="./src/assets/img/logo.png" alt="Logo" width="100" />
+            <img src="./assets/img/logo.png" alt="Logo" width="100" />
           </h5>
           <button
             type="button"

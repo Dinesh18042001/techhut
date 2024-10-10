@@ -9,6 +9,7 @@ import Companies from './Component/Companies'
 import AlumniSay from './Component/AlumniSay'
 import Questions from './Component/Questions'
 import Footer from './Component/Footer'
+import Mentors from './Component/Mentors'
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
         <Header/>
         <Banner/>
         <CareerPath/>
+        <Mentors/>
         <Career/>
         <Mentorship/>
         <Companies/>
