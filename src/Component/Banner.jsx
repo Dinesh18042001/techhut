@@ -75,7 +75,7 @@ export default function Banner() {
 
                   <div className="banner-btn d-flex gap-4 mt-4 mb-5">
                     <div className="banner-btn-1">
-                      <a href="#">Join Now</a>
+                      <a href="#">Join Now <i class="fa-solid fa-arrow-right ms-2"></i></a>
                     </div>
                     {/* <div className="banner-btn-2">
                       <a href="#">Download Syllabus <i class="fa-solid fa-download"></i></a>

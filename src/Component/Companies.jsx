@@ -9,9 +9,9 @@ export default function Companies() {
     margin: 15,
     nav: false,
     dots: false,
-    autoplay: true, 
-    autoplayTimeout: 3000, 
-    autoplayHoverPause: true, 
+    autoplay: true,
+    autoplayTimeout: 3000,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 2,
@@ -34,9 +34,8 @@ export default function Companies() {
             around the world
           </h2>
           <div className="companies-section-title-img text-center">
- <img src="./assets/banner/line-img.png" alt="" />
+            <img src="./assets/banner/line-img.png" alt="" />
           </div>
-
         </div>
         <OwlCarousel className="owl-theme" {...carouselOptions}>
           <div className="item">

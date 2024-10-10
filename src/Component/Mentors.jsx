@@ -50,7 +50,7 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img1.jpg" alt="" />
+                  <img src="./assets/Mentors/img2.jpg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
                   <h6>Amazon Rusiya</h6>
@@ -81,7 +81,7 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img1.jpg" alt="" />
+                  <img src="./assets/Mentors/img3.jpg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
                   <h6>Arpit Bhushan Sharma</h6>
@@ -112,7 +112,7 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img1.jpg" alt="" />
+                  <img src="./assets/Mentors/img4.jpg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
                   <h6>Raveet Kumar</h6>
@@ -143,7 +143,7 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img1.jpg" alt="" />
+                  <img src="./assets/Mentors/img5.jpg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
                   <h6>Rishabh Jain</h6>
@@ -177,7 +177,13 @@ export default function Mentors() {
               </div>
               <div className="seemore-card-info">
                 <h5>Browse over 300+ mentors</h5>
+
+                <div className="seemore-card-btn mt-4">
+                <a href="#">View All <i class="fa-solid fa-arrow-right ms-2"></i></a>
+               </div>
+
               </div>
+               
             </div>
           </div>
         </div>

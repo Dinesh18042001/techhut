@@ -16,9 +16,9 @@ export default function Footer() {
               <div className="row justify-content-between align-items-center">
                 <div className="col-lg-8">
                   <div className="link-main-box d-flex gap-3">
-                    <p>Refund Policy</p>
-                    <p>Privacy Policy</p>
-                    <p>Terms & Condition</p>
+                    <p><a href="#">Refund Policy</a></p>
+                    <p><a href="#">Privacy Policy</a></p>
+                    <p><a href="#">Terms & Condition</a></p>
                   </div>
                 </div>
 

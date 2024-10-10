@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Header() {
   useEffect(() => {
@@ -58,14 +59,14 @@ export default function Header() {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-lg-0">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/">
                   Mentors
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/courses">
                   Courses
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
@@ -78,9 +79,9 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/blogs">
                   Blog
-                </a>
+                </Link>
               </li>
             </ul>
 
@@ -135,13 +136,16 @@ export default function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/blogs">
                 Blog
-              </a>
+              </Link>
             </li>
           </ul>
           {/* Adding the Contact Us button */}
-          <div className="d-flex mt-4">
+          <div className="d-flex gap-3 mt-4">
+            <div className="nav-btn">
+              <a href="#">Enquiry Now</a>
+            </div>
             <div className="nav-btn">
               <a href="#">Contact Us</a>
             </div>

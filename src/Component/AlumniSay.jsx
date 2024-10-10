@@ -49,7 +49,7 @@ export default function AlumniSay() {
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img2.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Tanmay Patel</h6>
@@ -75,7 +75,7 @@ export default function AlumniSay() {
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img3.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>YATIN SHARMA</h6>
@@ -103,7 +103,7 @@ export default function AlumniSay() {
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img4.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Anshuman Das</h6>
@@ -131,7 +131,7 @@ export default function AlumniSay() {
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img5.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Saksham Gupta</h6>
@@ -157,7 +157,7 @@ export default function AlumniSay() {
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img6.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Gopal Mondal</h6>
@@ -187,7 +187,7 @@ export default function AlumniSay() {
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img7.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Ankit Raj</h6>
@@ -214,7 +214,7 @@ queries here and propeers are amazing ❤
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img8.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Atharav Zare</h6>
@@ -240,7 +240,7 @@ queries here and propeers are amazing ❤
               <div className="alumuisay-card mb-4">
                 <div className="alumuisay-card-tittle d-flex align-items-center">
                   <div className="alumuisay-card-tittle-img me-3">
-                    <img src="./assets/AlumniSay/img1.jpg" alt="" />
+                    <img src="./assets/AlumniSay/img9.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
                     <h6>Arpit Gaurav</h6>

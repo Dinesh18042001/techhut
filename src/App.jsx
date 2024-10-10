@@ -44,11 +44,15 @@ import AlumniSay from './Component/AlumniSay';
 import Questions from './Component/Questions';
 import Mentors from './Component/Mentors';
 import './App.css';
+import Blogs from './Component/Blogs';
+import ScrollToTop from './ScrollToTop';
+import Courses from './Component/Courses';
 
 const Layout = () => {
   return (
     <>
       <Header />
+      <ScrollToTop/>
       <Outlet/>
       <Footer />
     </>
@@ -68,6 +72,8 @@ const router = createBrowserRouter([
       { path: '/companies', element: <Companies /> },
       { path: '/alumni-say', element: <AlumniSay /> },
       { path: '/questions', element: <Questions /> },
+      { path: '/blogs', element: <Blogs/> },
+      { path: '/courses', element: <Courses/>},
     ],
   },
 ]);
