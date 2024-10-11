@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Career() {
   return (
@@ -37,7 +38,7 @@ export default function Career() {
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
-                            <a href="#">Learn More</a>
+                            <Link to="/courses">Learn More</Link>
                         </div>
                         
                     </div>

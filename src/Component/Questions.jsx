@@ -3,7 +3,7 @@ import React from "react";
 export default function Questions() {
   return (
     <>
-      <div className="qusetion-section">
+      <div className="qusetion-section mt-5">
         <div className="container">
           <div className="row">
             <div className="col-lg-6">

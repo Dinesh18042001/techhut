@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
+import Apply from './Modals/Apply'; // Import the Apply modal
 
 export default function Header() {
   useEffect(() => {
@@ -24,7 +25,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <div className="logo">
-            <img src="./assets/img/logo.png" alt="Logo" />
+            <Link to="/"><img src="./assets/img/logo.png" alt="Logo" /></Link>
           </div>
 
           {/* Mobile toggle button */}
@@ -64,7 +65,7 @@ export default function Header() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/courses">
+                <Link className="nav-link active" aria-current="page" to="#">
                   Courses
                 </Link>
               </li>
@@ -88,8 +89,15 @@ export default function Header() {
             <div className="callbtn main-btn">
               <a href="#">Enquiry Now</a>
             </div>
+            {/* Contact Us button to trigger the modal */}
             <div className="callbtn main-btn2">
-              <a href="#">Contact Us</a>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#applyModal" // This triggers the Apply modal
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </div>
@@ -126,9 +134,9 @@ export default function Header() {
               </a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/career">
                 Features
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#">
@@ -141,17 +149,26 @@ export default function Header() {
               </Link>
             </li>
           </ul>
-          {/* Adding the Contact Us button */}
+          {/* Adding the Contact Us button in off-canvas too */}
           <div className="d-flex gap-3 mt-4">
             <div className="nav-btn">
               <a href="#">Enquiry Now</a>
             </div>
             <div className="nav-btn">
-              <a href="#">Contact Us</a>
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#applyModal" 
+              >
+                Contact Us
+              </a>
             </div>
           </div>
         </div>
       </div>
+
+      {/* Apply Modal */}
+      <Apply />
     </>
   );
 }

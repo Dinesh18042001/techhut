@@ -47,6 +47,9 @@ import './App.css';
 import Blogs from './Component/Blogs';
 import ScrollToTop from './ScrollToTop';
 import Courses from './Component/Courses';
+import Refund from './Component/Refund';
+import PrivacyPolicy from './Component/PrivacyPolicy';
+import TermsCondition from './Component/TermsCondition';
 
 const Layout = () => {
   return (
@@ -74,6 +77,9 @@ const router = createBrowserRouter([
       { path: '/questions', element: <Questions /> },
       { path: '/blogs', element: <Blogs/> },
       { path: '/courses', element: <Courses/>},
+      { path: '/refund', element: <Refund/>},
+      { path: '/privacypolicy', element: <PrivacyPolicy/>},
+      { path: '/termscondition', element: <TermsCondition/>},
     ],
   },
 ]);

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
           <div className="row ">
             <div className="col-lg-6">
               <div className="footer-logo mb-4">
-                <img src="./assets/img/logo.png" alt="" />
+                <Link to="/"><img src="./assets/img/logo.png" alt="" /></Link>
               </div>
             </div>
 
@@ -16,9 +17,9 @@ export default function Footer() {
               <div className="row justify-content-between align-items-center">
                 <div className="col-lg-8">
                   <div className="link-main-box d-flex gap-3">
-                    <p><a href="#">Refund Policy</a></p>
-                    <p><a href="#">Privacy Policy</a></p>
-                    <p><a href="#">Terms & Condition</a></p>
+                    <p><Link to="/refund">Refund Policy</Link></p>
+                    <p><Link to="/privacypolicy">Privacy Policy</Link></p>
+                    <p><Link to="/termscondition">Terms & Condition</Link></p>
                   </div>
                 </div>
 
