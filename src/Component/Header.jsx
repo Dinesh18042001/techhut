@@ -86,15 +86,15 @@ export default function Header() {
               </li>
             </ul>
 
-            <div className="callbtn main-btn">
+            {/* <div className="callbtn main-btn">
               <a href="#">Enquiry Now</a>
-            </div>
+            </div> */}
             {/* Contact Us button to trigger the modal */}
             <div className="callbtn main-btn2">
               <a
                 href="#"
                 data-bs-toggle="modal"
-                data-bs-target="#applyModal" // This triggers the Apply modal
+                data-bs-target="#applyModal"
               >
                 Contact Us
               </a>

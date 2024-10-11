@@ -95,8 +95,8 @@ a#mobileServicesDropdown {
   gap: 6px;
   margin-left: 27px;
   border-radius: 10px;
-  background-color: #ffffff;
-  color: var(--primary-color);
+  background-color: var(--primary-color);
+  color: #fff;
   border: 1px solid var(--primary-color);
   padding: 10px 15px;
   font-size: 16px;
@@ -105,6 +105,10 @@ a#mobileServicesDropdown {
   transition: 0.5s;
   text-transform: uppercase;
   box-shadow: 0px 4px 6px 0px #00000033;
+}
+
+.callbtn:hover{
+  transform: scale(1.05);
 }
 
 .main-btn {
@@ -127,7 +131,7 @@ a#mobileServicesDropdown {
 
 .callbtn a {
   text-decoration: none;
-  color: var(--primary-color);
+  color: #fff;
 }
 
 .nav-btn a:hover {
