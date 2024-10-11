@@ -38,7 +38,7 @@ export default function Career() {
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
-                            <Link to="/courses">Learn More</Link>
+                            <Link to="softwareprogrammer">Learn More</Link>
                         </div>
                         
                     </div>
@@ -63,7 +63,7 @@ export default function Career() {
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
-                            <a href="#">Learn More</a>
+                            <Link to="/digitalmarketer">Learn More</Link>
                         </div>
                         
                     </div>

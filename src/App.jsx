@@ -50,6 +50,8 @@ import Courses from './Component/Courses';
 import Refund from './Component/Refund';
 import PrivacyPolicy from './Component/PrivacyPolicy';
 import TermsCondition from './Component/TermsCondition';
+import SoftwareProgrammer from './Component/SoftwareProgrammer';
+import DigitalMarketer from './Component/DigitalMarketer';
 
 const Layout = () => {
   return (
@@ -80,6 +82,8 @@ const router = createBrowserRouter([
       { path: '/refund', element: <Refund/>},
       { path: '/privacypolicy', element: <PrivacyPolicy/>},
       { path: '/termscondition', element: <TermsCondition/>},
+      { path: '/softwareprogrammer', element: <SoftwareProgrammer/>},
+      { path: '/digitalmarketer', element: <DigitalMarketer/>},
     ],
   },
 ]);
