@@ -192,7 +192,7 @@ export default function Apply() {
                       </select>
                     </div>
 
-                    <div className="col-lg-6 col-md-6 mb-3">
+                    {/* <div className="col-lg-6 col-md-6 mb-3">
                       <input
                         type="text"
                         className="form-control"
@@ -202,7 +202,7 @@ export default function Apply() {
                         onChange={handleChange}
                         required
                       />
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="mb-3">
