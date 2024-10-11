@@ -89,6 +89,7 @@ export default function Apply() {
                               value={topic.toLowerCase().replace(/\s+/g, '-')}
                               id={`topic${index + 1}`}
                               onChange={handleTopicChange}
+                              checked={selectedTopics.includes(topic.toLowerCase().replace(/\s+/g, '-'))}
                             />
                             <label className="form-check-label" htmlFor={`topic${index + 1}`}>
                               {topic}
@@ -116,6 +117,7 @@ export default function Apply() {
                               value={userType.toLowerCase().replace(/\s+/g, '-')}
                               id={`userType${index + 1}`}
                               onChange={handleUserTypeChange}
+                              checked={selectedUserTypes.includes(userType.toLowerCase().replace(/\s+/g, '-'))}
                             />
                             <label className="form-check-label" htmlFor={`userType${index + 1}`}>
                               {userType}
@@ -126,7 +128,7 @@ export default function Apply() {
                     ))}
                   </div>
 
-                  <div className="row mb-3 mt-4 ">
+                  <div className="row form-main mb-3 mt-4 ">
                     <div className="col-lg-6 col-md-6 mb-3">
                       <input
                         type="text"
@@ -184,7 +186,6 @@ export default function Apply() {
                         required
                       >
                         <option value="">Graduation Year *</option>
-                        {/* Add year options here */}
                         <option value="2024">2024</option>
                         <option value="2025">2025</option>
                         <option value="2026">2026</option>

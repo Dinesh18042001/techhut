@@ -1279,7 +1279,7 @@ a#mobileServicesDropdown {
   font-size: 14px;
 }
 
-input {
+.form-main input {
   height: 45px;
   background: #F1F5F9 !important;
 }
