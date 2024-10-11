@@ -101,7 +101,7 @@ export default function Banner() {
                     </div>
                     <div className="col-6">
                       <div className="row">
-                        <div className="col-lg-12 mb-3 h-100">
+                        <div className="col-lg-12 mai-col mb-3 h-100">
                           <div className="banner-card2 d-flex">
                             <div className="card-info">
                               <h6 className="mb-2">Ask Anything</h6>
@@ -112,7 +112,7 @@ export default function Banner() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-12 mb-3 h-100">
+                        <div className="col-lg-12 mai-col mb-3 h-100">
                           <div className="banner-card2 card3 d-flex">
                             <div className="card-info">
                               <h6 className="mb-2">Ask Anything</h6>
@@ -130,7 +130,7 @@ export default function Banner() {
                    <div className="row">
                    <div className="col-6">
                       <div className="row">
-                        <div className="col-lg-12 mb-3 h-100">
+                        <div className="col-lg-12  mb-3 h-100">
                           <div className="banner-card2 card4 d-flex">
                             <div className="card-info">
                               <h6 className="mb-2">Feed</h6>
@@ -141,7 +141,7 @@ export default function Banner() {
                             </div>
                           </div>
                         </div>
-                        <div className="col-lg-12 mb-3 h-100">
+                        <div className="col-lg-12  mb-3 h-100">
                           <div className="banner-card2 card5 card3 d-flex">
                             <div className="card-info">
                               <h6 className="mb-2">Problems</h6>
@@ -155,7 +155,7 @@ export default function Banner() {
                       </div>
                     </div>
 
-                    <div className="col-6">
+                    <div className="col-6 mai-col">
                       <div className="banner-card card6">
                         <h6 className="mb-2">Roadmaps</h6>
                         <p className="mb-2">Solve skill based roadmaps</p>

@@ -1410,3 +1410,10 @@ textarea {
 }
 
 /* termscondition-section end */
+
+
+@media (min-width: 991px) {
+  .mai-col{
+    padding-right: 0;
+  }
+}
