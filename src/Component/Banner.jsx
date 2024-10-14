@@ -115,8 +115,9 @@ export default function Banner() {
                         <div className="col-lg-12 mai-col mb-3 h-100">
                           <div className="banner-card2 card3 d-flex">
                             <div className="card-info">
-                              <h6 className="mb-2">Ask Anything</h6>
-                              <p>Need Advice ? Connect with our mentors</p>
+                              <h6 className="mb-2">Community</h6>
+                              <p>Connect with
+                              1000+peers</p>
                             </div>
                             <div className="card-img">
                               <img src="./assets/banner/card-img3.png" alt="" />

@@ -89,7 +89,7 @@ export default function Blogs() {
 
               <div className="blog-btn-date d-flex gap-5 align-items-center mt-4">
                 <div className="blog-btn">
-                  <Link to="/digitalblog">View More</Link>
+                  <Link to="#">View More</Link>
                 </div>
 
                 <div className="date-icon d-flex align-items-center">
@@ -119,7 +119,7 @@ export default function Blogs() {
 
               <div className="blog-btn-date d-flex gap-5  align-items-center mt-4">
                 <div className="blog-btn">
-                  <Link to="/webdevblog">View More</Link>
+                  <Link to="#">View More</Link>
                 </div>
 
                 <div className="date-icon d-flex align-items-center">
@@ -164,7 +164,7 @@ export default function Blogs() {
 
               <div className="blog-btn-date d-flex gap-5 align-items-center mt-4">
                 <div className="blog-btn">
-                  <Link to="/virtualassblog">View More</Link>
+                  <Link to="#">View More</Link>
                 </div>
 
                 <div className="date-icon d-flex align-items-center">

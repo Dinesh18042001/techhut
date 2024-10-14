@@ -479,7 +479,7 @@ a#mobileServicesDropdown {
 
 
 .banner-card2 .card-img img {
-  width: 100%;
+  width: 90%;
 }
 
 
@@ -505,7 +505,7 @@ a#mobileServicesDropdown {
 }
 
 .card4 {
-  background: #94A3B8;
+  background: #E9FCF1;
 }
 
 .card5 {
@@ -569,6 +569,12 @@ a#mobileServicesDropdown {
 .banner-btn .banner-btn-2 a {
   text-decoration: none;
   color: #000;
+}
+
+@media (min-width: 991px) {
+  .mai-col{
+    padding-right: 0;
+  }
 }
 
 
@@ -759,6 +765,12 @@ a#mobileServicesDropdown {
 
 
 /* companies-section start */
+
+.companies-section{
+  margin-top: 90px;
+  margin-bottom: 90px !important;
+}
+
 .companies-section .companies-section-title h2 {
   font-size: 30px;
   font-weight: 600;
@@ -859,6 +871,8 @@ a#mobileServicesDropdown {
 
 
 /* .qusetion-section start */
+
+
 .qusetion-section .qusetion-main h2 {
   font-weight: 600;
   font-size: 30px;
@@ -970,6 +984,15 @@ a#mobileServicesDropdown {
   align-items: center;
   color: white;
   font-size: 18px;
+  transition: 0.5s all;
+}
+
+.socal-link span:hover{
+  scale: 1.1;
+}
+
+.socal-link span a{
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -1412,8 +1435,25 @@ textarea {
 /* termscondition-section end */
 
 
-@media (min-width: 991px) {
-  .mai-col{
-    padding-right: 0;
-  }
+.careerpathmain-section {
+  overflow: hidden; /* Prevents overflow outside the container */
 }
+
+.main-silider-box {
+  display: inline-flex; /* Keeps items in a single row */
+}
+
+.silider-box {
+  margin-right: 15px; /* Add spacing between cards */
+}
+
+
+
+.error {
+  color: red; 
+  font-size: 0.875em; 
+  margin-top: 0.25rem; 
+}
+
+
+
