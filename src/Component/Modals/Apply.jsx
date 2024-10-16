@@ -266,7 +266,7 @@ export default function Apply() {
                       required
                     ></textarea>
                   </div>
-
+   
                   <button type="submit" className="btn btn-primary">Apply</button>
                 </form>
               </div>

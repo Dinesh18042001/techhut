@@ -1,21 +1,21 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import Apply from './Modals/Apply'; // Import the Apply modal
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import Apply from "./Modals/Apply"; 
 
 export default function Header() {
   useEffect(() => {
     const handleScroll = () => {
-      const nav = document.querySelector('.navbar');
+      const nav = document.querySelector(".navbar");
       if (document.documentElement.scrollTop > 20) {
-        nav.classList.add('header-scrolled');
+        nav.classList.add("header-scrolled");
       } else {
-        nav.classList.remove('header-scrolled');
+        nav.classList.remove("header-scrolled");
       }
     };
-    window.addEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
-      window.removeEventListener('scroll', handleScroll);
+      window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 
@@ -25,7 +25,9 @@ export default function Header() {
       <nav className="navbar navbar-expand-lg navbar-light">
         <div className="container">
           <div className="logo">
-            <Link to="/"><img src="./assets/img/logo.png" alt="Logo" /></Link>
+            <Link to="/">
+              <img src="./assets/img/logo.png" alt="Logo" />
+            </Link>
           </div>
 
           {/* Mobile toggle button */}
@@ -43,7 +45,7 @@ export default function Header() {
               height="40"
               viewBox="0 0 512 512"
               className=""
-              style={{ enableBackground: 'new 0 0 512 512' }}
+              style={{ enableBackground: "new 0 0 512 512" }}
             >
               <g>
                 <path
@@ -64,11 +66,31 @@ export default function Header() {
                   Mentors
                 </Link>
               </li>
-              <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="#">
+              <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
                   Courses
                 </Link>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/fullstackdev">
+                    full stack development
+                    </Link>
+                  </li>
+                  {/* <li>
+                    <Link className="dropdown-item" to="#">
+                    Digital Marketer
+                    </Link>
+                  </li> */}
+                </ul>
               </li>
+
               <li className="nav-item">
                 <a className="nav-link active" aria-current="page" href="#">
                   Features
@@ -80,7 +102,11 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <Link className="nav-link active" aria-current="page" to="/blogs">
+                <Link
+                  className="nav-link active"
+                  aria-current="page"
+                  to="/blogs"
+                >
                   Blog
                 </Link>
               </li>
@@ -91,11 +117,7 @@ export default function Header() {
             </div> */}
             {/* Contact Us button to trigger the modal */}
             <div className="callbtn main-btn2">
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#applyModal"
-              >
+              <a href="#" data-bs-toggle="modal" data-bs-target="#applyModal">
                 Contact Us
               </a>
             </div>
@@ -155,11 +177,7 @@ export default function Header() {
               <a href="#">Enquiry Now</a>
             </div>
             <div className="nav-btn">
-              <a
-                href="#"
-                data-bs-toggle="modal"
-                data-bs-target="#applyModal" 
-              >
+              <a href="#" data-bs-toggle="modal" data-bs-target="#applyModal">
                 Contact Us
               </a>
             </div>

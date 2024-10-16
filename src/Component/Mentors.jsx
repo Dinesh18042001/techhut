@@ -178,9 +178,9 @@ export default function Mentors() {
               <div className="seemore-card-info">
                 <h5>Browse over 300+ mentors</h5>
 
-                <div className="seemore-card-btn mt-4">
+                {/* <div className="seemore-card-btn mt-4">
                 <a href="#">View All <i class="fa-solid fa-arrow-right ms-2"></i></a>
-               </div>
+               </div> */}
 
               </div>
                

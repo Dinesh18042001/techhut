@@ -26,7 +26,7 @@ export default function Companies() {
   };
 
   return (
-    <div className="companies-section mb-5">
+    <div className="companies-section mt-5 mb-5">
       <div className="container">
         <div className="companies-section-title mb-5">
           <h2 className="text-center ">

@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 export default function Career() {
   return (
     <>
+    <section  id="arr">
       <div className="carrer-section mt-5 mb-5">
         <div className="carrer-section-tittle mb-5">
           <h2 className="text-center">
@@ -23,7 +24,7 @@ export default function Career() {
                     <div className="carrer-card h-100">
                         <div className="carrer-card-tittle mb-2">
                             <img src="./assets/caeeer/tittle-1.png" alt="" />
-                            <h5>Software Programmer</h5>
+                            <h5>full stack development</h5>
                         </div>
 
                         <div className="carrer-card-tittle-body p-3">
@@ -38,7 +39,7 @@ export default function Career() {
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
-                            <Link to="softwareprogrammer">Learn More</Link>
+                            <Link to="/fullstackdev">Learn More</Link>
                         </div>
                         
                     </div>
@@ -73,6 +74,7 @@ export default function Career() {
           </div>
         </div>
       </div>
+      </section>
     </>
   );
 }
