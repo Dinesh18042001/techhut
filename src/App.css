@@ -1439,6 +1439,12 @@ textarea {
   height: 550px;
 }
 
+@media (max-width: 1199px) {
+  .fullstackdev-banner-section .fullstackdev-banner-bg img{
+    height: 800px;
+  }
+}
+
 @media (max-width: 991px) {
   .fullstackdev-banner-section .fullstackdev-banner-bg img{
     height: 1150px;
@@ -1446,7 +1452,7 @@ textarea {
 }
 @media (max-width: 576px) {
   .fullstackdev-banner-section .fullstackdev-banner-bg img{
-    height: 1300px;
+    height: 1350px;
   }
 }
 
