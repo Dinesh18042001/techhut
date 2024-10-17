@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 export default function SolidEngineer() {
   const [activeModule, setActiveModule] = useState(1);
@@ -57,14 +56,14 @@ export default function SolidEngineer() {
         return (
           <div className="month-info-card-info mt-4">
             <p>SQL/MongoDB</p>
-            {/* Add content for Module 3 */}
+            
           </div>
         );
       case 4:
         return (
           <div className="month-info-card-info mt-4">
             <p>LLD and Project Specialisations</p>
-            {/* Add content for Module 4 */}
+            
           </div>
         );
       case 5:
@@ -96,20 +95,20 @@ export default function SolidEngineer() {
     }
   }
 
-  const [otherCompanyInputVisible, setOtherCompanyInputVisible] = useState(false);
+  const [otherCompanyInputVisible, setOtherCompanyInputVisible] =
+    useState(false);
 
-const handleOtherChange = () => {
-  setOtherCompanyInputVisible(true);
-};
+  const handleOtherChange = () => {
+    setOtherCompanyInputVisible(true);
+  };
 
-const [isEmployed, setIsEmployed] = useState(true); // Assuming "Employed" is the default
+  const [isEmployed, setIsEmployed] = useState(true); // Assuming "Employed" is the default
 
-const handleOccupationToggle = (event) => {
-  setIsEmployed(event.target.checked); // true if checked (Employed), false if unchecked (Student)
-};
+  const handleOccupationToggle = (event) => {
+    setIsEmployed(event.target.checked); // true if checked (Employed), false if unchecked (Student)
+  };
 
-// Other existing functions
-
+  // Other existing functions
 
   return (
     <>
@@ -266,226 +265,246 @@ const handleOccupationToggle = (event) => {
       </div>
 
       {/* Modal */}
-<div
-  className="modal fade downloadCurriculumModal"
-  id="downloadCurriculumModal"
-  tabIndex="-1"
-  aria-labelledby="downloadCurriculumModalLabel"
-  aria-hidden="true"
->
-  <div className="modal-dialog modal-lg">
-    <div className="modal-content">
-      <div className="modal-header">
-        <h5 className="modal-title" id="downloadCurriculumModalLabel">
-          Download Curriculum
-        </h5>
-        <button
-          type="button"
-          className="btn-close"
-          data-bs-dismiss="modal"
-          aria-label="Close"
-        ></button>
+      <div
+        className="modal fade downloadCurriculumModal"
+        id="downloadCurriculumModal"
+        tabIndex="-1"
+        aria-labelledby="downloadCurriculumModalLabel"
+        aria-hidden="true"
+      >
+        <div className="modal-dialog modal-lg">
+          <div className="modal-content">
+            <div className="modal-header">
+              <h5 className="modal-title" id="downloadCurriculumModalLabel">
+                Download Curriculum
+              </h5>
+              <button
+                type="button"
+                className="btn-close"
+                data-bs-dismiss="modal"
+                aria-label="Close"
+              ></button>
+            </div>
+            <div className="modal-body">
+              <form>
+                {/* Name Field */}
+                <div className="mb-3">
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="nameInput"
+                    placeholder="Full Name"
+                  />
+                </div>
+
+                {/* Email Field */}
+                <div className="mb-3">
+                  <input
+                    type="email"
+                    className="form-control"
+                    id="emailInput"
+                    placeholder="Email"
+                  />
+                </div>
+
+                {/* Phone Field */}
+                <div className="mb-3">
+                  <input
+                    type="tel"
+                    className="form-control"
+                    id="phoneInput"
+                    placeholder="Phone Number"
+                  />
+                </div>
+
+                {/* Toggle Switch for Occupation */}
+                <div className="mb-3 text-center">
+                  <label className="form-label">Occupation</label>
+                  <div className="d-flex justify-content-center align-items-center">
+                    <span className="me-3">Student</span>
+                    <div className="form-check form-switch">
+                      <input
+                        className="form-check-input"
+                        type="checkbox"
+                        id="occupationSwitch"
+                        onChange={handleOccupationToggle}
+                        checked={isEmployed} // Check based on state
+                      />
+                    </div>
+                    <span className="ms-3">Employed</span>
+                  </div>
+                </div>
+
+                {/* Additional Input Fields for Employed */}
+                <div
+                  id="employedFields"
+                  style={{ display: isEmployed ? "block" : "none" }}
+                >
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="experienceInput"
+                      placeholder="Years of Experience"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="jobTitleInput"
+                      placeholder="Your Job Title"
+                    />
+                  </div>
+                </div>
+
+                {/* Additional Input Fields for Student */}
+                <div
+                  id="studentFields"
+                  style={{ display: isEmployed ? "none" : "block" }}
+                >
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="schoolInput"
+                      placeholder="School/University Name"
+                    />
+                  </div>
+                  <div className="mb-3">
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="degreeInput"
+                      placeholder="Degree Program"
+                    />
+                  </div>
+
+                  {/* Inline Radio Buttons */}
+                  <div className="mb-3">
+                    <label className="form-label me-3">Dream company :</label>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio1"
+                        value="option1"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineRadio1"
+                      >
+                        Accenture
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio2"
+                        value="option2"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineRadio2"
+                      >
+                        Google
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio3"
+                        value="option3"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineRadio3"
+                      >
+                        Microsoft
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio4"
+                        value="oracle"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineRadio4"
+                      >
+                        Oracle
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadio5"
+                        value="ibm"
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineRadio5"
+                      >
+                        IBM
+                      </label>
+                    </div>
+                    <div className="form-check form-check-inline">
+                      <input
+                        className="form-check-input"
+                        type="radio"
+                        name="inlineRadioOptions"
+                        id="inlineRadioOther"
+                        value="other"
+                        onChange={handleOtherChange}
+                      />
+                      <label
+                        className="form-check-label"
+                        htmlFor="inlineRadioOther"
+                      >
+                        Other
+                      </label>
+                    </div>
+                  </div>
+
+                  {/* Input for Other Company */}
+                  {otherCompanyInputVisible && (
+                    <div className="mb-3">
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="otherCompanyInput"
+                        placeholder="Please specify"
+                      />
+                    </div>
+                  )}
+                </div>
+              </form>
+            </div>
+            <div className="modal-footer">
+              <button
+                type="button"
+                className="btn btn-secondary"
+                data-bs-dismiss="modal"
+              >
+                Close
+              </button>
+              <button type="button" className="btn btn-primary">
+                Send Curriculum
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div className="modal-body">
-        <form>
-          {/* Name Field */}
-          <div className="mb-3">
-            <input
-              type="text"
-              className="form-control"
-              id="nameInput"
-              placeholder="Full Name"
-            />
-          </div>
-
-          {/* Email Field */}
-          <div className="mb-3">
-            <input
-              type="email"
-              className="form-control"
-              id="emailInput"
-              placeholder="Email"
-            />
-          </div>
-
-          {/* Phone Field */}
-          <div className="mb-3">
-            <input
-              type="tel"
-              className="form-control"
-              id="phoneInput"
-              placeholder="Phone Number"
-            />
-          </div>
-
-          {/* Toggle Switch for Occupation */}
-          <div className="mb-3 text-center">
-            <label className="form-label">Occupation</label>
-            <div className="d-flex justify-content-center align-items-center">
-              <span className="me-3">Student</span>
-              <div className="form-check form-switch">
-                <input
-                  className="form-check-input"
-                  type="checkbox"
-                  id="occupationSwitch"
-                  onChange={handleOccupationToggle}
-                  checked={isEmployed} // Check based on state
-                />
-              </div>
-              <span className="ms-3">Employed</span>
-            </div>
-          </div>
-
-          {/* Additional Input Fields for Employed */}
-          <div id="employedFields" style={{ display: isEmployed ? "block" : "none" }}>
-            <div className="mb-3">
-              <input
-                type="text"
-                className="form-control"
-                id="experienceInput"
-                placeholder="Years of Experience"
-              />
-            </div>
-            <div className="mb-3">
-              <input
-                type="text"
-                className="form-control"
-                id="jobTitleInput"
-                placeholder="Your Job Title"
-              />
-            </div>
-          </div>
-
-          {/* Additional Input Fields for Student */}
-          <div id="studentFields" style={{ display: isEmployed ? "none" : "block" }}>
-            <div className="mb-3">
-              <input
-                type="text"
-                className="form-control"
-                id="schoolInput"
-                placeholder="School/University Name"
-              />
-            </div>
-            <div className="mb-3">
-              <input
-                type="text"
-                className="form-control"
-                id="degreeInput"
-                placeholder="Degree Program"
-              />
-            </div>
-
-            {/* Inline Radio Buttons */}
-            <div className="mb-3">
-              <label className="form-label me-3">Dream company :</label>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio1"
-                  value="option1"
-                />
-                <label className="form-check-label" htmlFor="inlineRadio1">
-                  Accenture
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio2"
-                  value="option2"
-                />
-                <label className="form-check-label" htmlFor="inlineRadio2">
-                  Google
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio3"
-                  value="option3"
-                />
-                <label className="form-check-label" htmlFor="inlineRadio3">
-                  Microsoft
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio4"
-                  value="oracle"
-                />
-                <label className="form-check-label" htmlFor="inlineRadio4">
-                  Oracle
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadio5"
-                  value="ibm"
-                />
-                <label className="form-check-label" htmlFor="inlineRadio5">
-                  IBM
-                </label>
-              </div>
-              <div className="form-check form-check-inline">
-                <input
-                  className="form-check-input"
-                  type="radio"
-                  name="inlineRadioOptions"
-                  id="inlineRadioOther"
-                  value="other"
-                  onChange={handleOtherChange}
-                />
-                <label className="form-check-label" htmlFor="inlineRadioOther">
-                  Other
-                </label>
-              </div>
-            </div>
-
-            {/* Input for Other Company */}
-            {otherCompanyInputVisible && (
-              <div className="mb-3">
-                <input
-                  type="text"
-                  className="form-control"
-                  id="otherCompanyInput"
-                  placeholder="Please specify"
-                />
-              </div>
-            )}
-          </div>
-        </form>
-      </div>
-      <div className="modal-footer">
-        <button
-          type="button"
-          className="btn btn-secondary"
-          data-bs-dismiss="modal"
-        >
-          Close
-        </button>
-        <button type="button" className="btn btn-primary">
-          Send Curriculum
-        </button>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
-
     </>
   );
 }
