@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import $ from 'jquery';
 import 'jquery-validation';
+import emailjs from 'emailjs-com';
 
 export default function Apply() {
   const [selectedTopics, setSelectedTopics] = useState("");
@@ -32,41 +33,59 @@ export default function Apply() {
   };
 
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log('Form data submitted:', formData, selectedTopics, selectedUserTypes);
+    event.preventDefault(); // Prevent default form submission behavior
+
+    // EmailJS setup
+    const serviceID = 'service_9s92x4i';
+    const templateID = 'template_c6we96l';
+    const userID = 'KNsLv0bXGuvjHgNvn'; 
+
+    const templateParams = {
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      topic: selectedTopics,
+      userType: selectedUserTypes,
+      college: formData.college,
+      graduationYear: formData.graduationYear,
+      dreamCompany: formData.dreamCompany, // Include dreamCompany
+      message: formData.message,
+    };
+
+    emailjs.send(serviceID, templateID, templateParams, userID)
+      .then((response) => {
+        console.log('SUCCESS!', response.status, response.text);
+        alert("Form submitted successfully!");
+        setFormData({ // Reset form data after successful submission
+          fullName: '',
+          email: '',
+          phone: '',
+          college: '',
+          graduationYear: '',
+          dreamCompany: '',
+          message: ''
+        });
+        setSelectedTopics(""); // Reset selected topics
+        setSelectedUserTypes(""); // Reset selected user types
+      })
+      .catch((err) => {
+        console.error('FAILED...', err);
+        alert("Failed to send form. Please try again.");
+      });
   };
 
   useEffect(() => {
     // jQuery validation setup
     $("#applyForm").validate({
       rules: {
-        fullName: {
-          required: true,
-        },
-        email: {
-          required: true,
-          email: true,
-        },
-        phone: {
-          required: true,
-          minlength: 10,
-          maxlength: 15,
-        },
-        college: {
-          required: true,
-        },
-        graduationYear: {
-          required: true,
-        },
-        message: {
-          required: true,
-        },
-        topic: {
-          required: true,
-        },
-        userType: {
-          required: true,
-        },
+        fullName: { required: true },
+        email: { required: true, email: true },
+        phone: { required: true, minlength: 10, maxlength: 15 },
+        college: { required: true },
+        graduationYear: { required: true },
+        message: { required: true },
+        topic: { required: true },
+        userType: { required: true },
       },
       messages: {
         fullName: "Please enter your full name.",
@@ -82,49 +101,35 @@ export default function Apply() {
         topic: "Please select a topic of interest.",
         userType: "Please select your user type.",
       },
-      errorPlacement: function(error, element) {
-        // Customize error placement for radio buttons
+      errorPlacement: function (error, element) {
         if (element.attr("name") === "topic" || element.attr("name") === "userType") {
-          error.appendTo(element.closest('.modal-body-info')); // Append error to a specific container
+          error.appendTo(element.closest('.modal-body-info'));
         } else {
           error.insertAfter(element);
         }
       },
-      submitHandler: function (form) {
-        // You can add your form submission logic here
+      submitHandler: function () {
+        // When the form is valid, call handleSubmit
         handleSubmit();
       }
     });
-  }, []); // Run the effect once on mount
+  }, []);
 
   return (
     <>
-      <div
-        className="modal fade"
-        id="applyModal"
-        tabIndex="-1"
-        aria-labelledby="exampleModalLabel"
-        aria-hidden="true"
-      >
+      <div className="modal fade" id="applyModal" tabIndex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div className="modal-dialog modal-xl">
           <div className="modal-content">
             <div className="modal-header">
               <div>
-                <h5 className="modal-title" id="exampleModalLabel">
-                  Apply now
-                </h5>
+                <h5 className="modal-title" id="exampleModalLabel">Apply now</h5>
                 <p>Next Batch Starts in November</p>
               </div>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
+              <button type="button" className="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div className="modal-body">
               <div className="modal-body-info">
-                <form id="applyForm">
+                <form id="applyForm" onSubmit={handleSubmit}>
                   <div className="modal-body-qus mb-3">
                     <h6>Your Topic of interest? <span>*</span></h6>
                   </div>
@@ -139,7 +144,7 @@ export default function Apply() {
                               value={topic.toLowerCase().replace(/\s+/g, '-')}
                               id={`topic${index + 1}`}
                               onChange={handleTopicChange}
-                              checked={selectedTopics === topic.toLowerCase().replace(/\s+/g, '-')}
+                              checked={selectedTopics === topic.toLowerCase().replace(/\s+/g, '-') }
                               name="topic"
                             />
                             <label className="form-check-label" htmlFor={`topic${index + 1}`}>
@@ -165,7 +170,7 @@ export default function Apply() {
                               value={userType.toLowerCase().replace(/\s+/g, '-')}
                               id={`userType${index + 1}`}
                               onChange={handleUserTypeChange}
-                              checked={selectedUserTypes === userType.toLowerCase().replace(/\s+/g, '-')}
+                              checked={selectedUserTypes === userType.toLowerCase().replace(/\s+/g, '-') }
                               name="userType"
                             />
                             <label className="form-check-label" htmlFor={`userType${index + 1}`}>
@@ -244,30 +249,42 @@ export default function Apply() {
                         onChange={handleChange}
                         required
                       >
-                        <option value="">Graduation Year *</option>
-                        <option value="2024">2024</option>
-                        <option value="2025">2025</option>
-                        <option value="2026">2026</option>
+                        <option value="">Select Year *</option>
+                        {[...Array(5)].map((_, i) => (
+                          <option key={i} value={2024 + i}>{2024 + i}</option>
+                        ))}
                       </select>
                     </div>
 
-                  </div>
+                    <div className="col-lg-6 col-md-6 mb-3">
+                      <label htmlFor="dreamCompany" className="form-label">Your Dream Company *</label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="dreamCompany"
+                        name="dreamCompany"
+                        placeholder="Your Dream Company *"
+                        value={formData.dreamCompany}
+                        onChange={handleChange}
+                        required
+                      />
+                    </div>
 
-                  <div className="mb-3">
-                    <label htmlFor="message" className="form-label">Enter your message *</label>
-                    <textarea
-                      className="form-control"
-                      id="message"
-                      name="message"
-                      rows="5"
-                      placeholder="Enter your message *"
-                      value={formData.message}
-                      onChange={handleChange}
-                      required
-                    ></textarea>
+                    <div className="col-lg-12 mb-3">
+                      <label htmlFor="message" className="form-label">Any message? *</label>
+                      <textarea
+                        className="form-control"
+                        id="message"
+                        name="message"
+                        rows="3"
+                        placeholder="Your message *"
+                        value={formData.message}
+                        onChange={handleChange}
+                        required
+                      ></textarea>
+                    </div>
                   </div>
-   
-                  <button type="submit" className="btn btn-primary">Apply</button>
+                  <button type="submit" className="btn btn-primary">Submit</button>
                 </form>
               </div>
             </div>
@@ -277,4 +294,3 @@ export default function Apply() {
     </>
   );
 }
-

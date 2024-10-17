@@ -21,6 +21,7 @@ import TermsCondition from './Component/TermsCondition';
 import SoftwareProgrammer from './Component/SoftwareProgrammer';
 import DigitalMarketer from './Component/DigitalMarketer';
 import FullStackDev from './Component/Courses/FullStackDev/FullStackDev';
+import DigitalMarketerMain from './Component/Courses/DigitalMarketer/DigitalMarketerMain';
 
 
 const Layout = () => {
@@ -55,6 +56,7 @@ const router = createBrowserRouter([
       { path: '/softwareprogrammer', element: <SoftwareProgrammer/>},
       { path: '/digitalmarketer', element: <DigitalMarketer/>},
       { path: '/fullstackdev', element: <FullStackDev/>},
+      { path: '/digitalmarketermain', element: <DigitalMarketerMain/>},
       
     ],
   },

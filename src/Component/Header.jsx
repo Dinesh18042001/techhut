@@ -83,11 +83,11 @@ export default function Header() {
                     full stack development
                     </Link>
                   </li>
-                  {/* <li>
-                    <Link className="dropdown-item" to="#">
+                  <li>
+                    <Link className="dropdown-item" to="/digitalmarketermain">
                     Digital Marketer
                     </Link>
-                  </li> */}
+                  </li>
                 </ul>
               </li>
 
