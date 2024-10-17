@@ -64,7 +64,7 @@ export default function Career() {
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
-                            <Link to="/digitalmarketer">Learn More</Link>
+                            <Link to="/digitalmarketermain">Learn More</Link>
                         </div>
                         
                     </div>
