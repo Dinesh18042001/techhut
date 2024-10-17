@@ -1,3 +1,4 @@
+
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Apply from "./Modals/Apply"; 
@@ -18,6 +19,13 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+
+  // Function to close the Off-canvas
+  const closeOffcanvas = () => {
+    const offcanvasElement = document.getElementById("offcanvasNavbar");
+    const bsOffcanvas = bootstrap.Offcanvas.getInstance(offcanvasElement);
+    bsOffcanvas.hide();  // Close the off-canvas
+  };
 
   return (
     <>
@@ -80,12 +88,12 @@ export default function Header() {
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
                     <Link className="dropdown-item" to="/fullstackdev">
-                    full stack development
+                      Full Stack Development
                     </Link>
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/digitalmarketermain">
-                    Digital Marketer
+                      Digital Marketer
                     </Link>
                   </li>
                 </ul>
@@ -102,20 +110,12 @@ export default function Header() {
                 </a>
               </li>
               <li className="nav-item">
-                <Link
-                  className="nav-link active"
-                  aria-current="page"
-                  to="/blogs"
-                >
+                <Link className="nav-link active" aria-current="page" to="/blogs">
                   Blog
                 </Link>
               </li>
             </ul>
 
-            {/* <div className="callbtn main-btn">
-              <a href="#">Enquiry Now</a>
-            </div> */}
-            {/* Contact Us button to trigger the modal */}
             <div className="callbtn main-btn2">
               <a href="#" data-bs-toggle="modal" data-bs-target="#applyModal">
                 Contact Us
@@ -146,57 +146,56 @@ export default function Header() {
         <div className="offcanvas-body">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <Link className="nav-link" to="/" onClick={closeOffcanvas}>
                 Mentors
-              </a>
+              </Link>
             </li>
             <li className="nav-item dropdown">
-                <Link
-                  className="nav-link dropdown-toggle"
-                  to="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Courses
-                </Link>
-                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li>
-                    <Link className="dropdown-item" to="/fullstackdev">
-                    full stack development
-                    </Link>
-                  </li>
-                  <li>
-                    <Link className="dropdown-item" to="/digitalmarketermain">
+              <Link
+                className="nav-link dropdown-toggle"
+                to="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                onClick={closeOffcanvas}
+              >
+                Courses
+              </Link>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <Link className="dropdown-item" to="/fullstackdev" onClick={closeOffcanvas}>
+                    Full Stack Development
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to="/digitalmarketermain" onClick={closeOffcanvas}>
                     Digital Marketer
-                    </Link>
-                  </li>
-                </ul>
-              </li>
+                  </Link>
+                </li>
+              </ul>
+            </li>
             <li className="nav-item">
-              <Link className="nav-link" to="#career">
+              <Link className="nav-link" to="#career" onClick={closeOffcanvas}>
                 Features
               </Link>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" href="#" onClick={closeOffcanvas}>
                 Placements
               </a>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/blogs">
+              <Link className="nav-link" to="/blogs" onClick={closeOffcanvas}>
                 Blog
               </Link>
             </li>
           </ul>
+
           {/* Adding the Contact Us button in off-canvas too */}
           <div className="d-flex gap-3 mt-4">
-            {/* <div className="nav-btn">
-              <a href="#">Enquiry Now</a>
-            </div> */}
             <div className="nav-btn">
-              <a href="#" data-bs-toggle="modal" data-bs-target="#applyModal">
+              <a href="#" data-bs-toggle="modal" data-bs-target="#applyModal" onClick={closeOffcanvas}>
                 Contact Us
               </a>
             </div>
