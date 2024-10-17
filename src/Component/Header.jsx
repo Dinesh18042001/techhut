@@ -150,11 +150,30 @@ export default function Header() {
                 Mentors
               </a>
             </li>
-            <li className="nav-item">
-              <a className="nav-link" href="#">
-                Courses
-              </a>
-            </li>
+            <li className="nav-item dropdown">
+                <Link
+                  className="nav-link dropdown-toggle"
+                  to="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Courses
+                </Link>
+                <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <Link className="dropdown-item" to="/fullstackdev">
+                    full stack development
+                    </Link>
+                  </li>
+                  <li>
+                    <Link className="dropdown-item" to="/digitalmarketermain">
+                    Digital Marketer
+                    </Link>
+                  </li>
+                </ul>
+              </li>
             <li className="nav-item">
               <Link className="nav-link" to="#career">
                 Features
@@ -173,9 +192,9 @@ export default function Header() {
           </ul>
           {/* Adding the Contact Us button in off-canvas too */}
           <div className="d-flex gap-3 mt-4">
-            <div className="nav-btn">
+            {/* <div className="nav-btn">
               <a href="#">Enquiry Now</a>
-            </div>
+            </div> */}
             <div className="nav-btn">
               <a href="#" data-bs-toggle="modal" data-bs-target="#applyModal">
                 Contact Us
