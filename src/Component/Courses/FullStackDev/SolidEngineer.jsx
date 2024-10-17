@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import DownloadCurriculum from "../../Modals/DownloadCurriculum";
 export default function SolidEngineer() {
   const [activeModule, setActiveModule] = useState(1);
 
@@ -49,63 +50,210 @@ export default function SolidEngineer() {
         return (
           <div className="month-info-card-info mt-4">
             <p>Data Structures and Algorithms</p>
-            {/* Add content for Module 2 */}
+            <ul className="mt-4">
+              <li className="mb-2">
+                <p> Arrays</p>
+              </li>
+              <li className="mb-2">
+                <p>Linked Lists</p>
+              </li>
+              <li className="mb-2">
+                <p>Stacks</p>
+              </li>
+              <li className="mb-2">
+                <p>Queues</p>
+              </li>
+              <li className="mb-2">
+                <p>Trees</p>
+              </li>
+              <li className="mb-2">
+                <p>Graphs</p>
+              </li>
+              <li className="mb-2">
+                <p>Hashing</p>
+              </li>
+              <li className="mb-2">
+                <p>Sorting Algorithms</p>
+              </li>
+              <li className="mb-2">
+                <p> Searching Algorithms</p>
+              </li>
+              <li className="mb-2">
+                <p>Recursion</p>
+              </li>
+              <li className="mb-4">
+                <p>Dynamic Programming</p>
+              </li>
+            </ul>
           </div>
         );
       case 3:
         return (
           <div className="month-info-card-info mt-4">
             <p>SQL/MongoDB</p>
-            
+            <ul className="mt-4">
+              <li className="mb-2">
+                <p>Database Basics</p>
+              </li>
+              <li className="mb-2">
+                <p>Data Types in SQL</p>
+              </li>
+              <li className="mb-2">
+                <p>Basic SQL Queries</p>
+              </li>
+              <li className="mb-2">
+                <p>Joins</p>
+              </li>
+              <li className="mb-2">
+                <p>Aggregate Functions</p>
+              </li>
+              <li className="mb-2">
+                <p>Inserting and Modifying Data</p>
+              </li>
+              <li className="mb-2">
+                <p>Subqueries</p>
+              </li>
+              <li className="mb-2">
+                <p>Constraints and Indexing</p>
+              </li>
+              <li className="mb-2">
+                <p>Transactions and ACID Properties</p>
+              </li>
+              <li className="mb-2">
+                <p> SQL Views</p>
+              </li>
+              <li className="mb-4">
+                <p>MongoDB (NoSQL)</p>
+              </li>
+            </ul>
           </div>
         );
       case 4:
         return (
           <div className="month-info-card-info mt-4">
             <p>LLD and Project Specialisations</p>
-            
+            <ul className="mt-4">
+              <li className="mb-2">
+                <p>Low-Level Design (LLD)</p>
+              </li>
+              <li className="mb-2">
+                <p>Object-Oriented Design (OOD) Principles</p>
+              </li>
+              <li className="mb-2">
+                <p> UML Diagrams</p>
+              </li>
+              <li className="mb-2">
+                <p>Design Patterns</p>
+              </li>
+              <li className="mb-2">
+                <p>Class Design</p>
+              </li>
+              <li className="mb-2">
+                <p>Designing APIs</p>
+              </li>
+              <li className="mb-2">
+                <p>Modular Design</p>
+              </li>
+              <li className="mb-2">
+                <p>Concurrency and Multithreading</p>
+              </li>
+              <li className="mb-2">
+                <p>Data Structures in LLD</p>
+              </li>
+              <li className="mb-2">
+                <p> Error Handling and Logging</p>
+              </li>
+              <li className="mb-4">
+                <p>Web Development Projects</p>
+              </li>
+            </ul>
           </div>
         );
       case 5:
         return (
           <div className="month-info-card-info mt-4">
             <p>System Design Essentials</p>
-            {/* Add content for Module 5 */}
+            <ul className="mt-4">
+              <li className="mb-2">
+                <p> Overview of System Design</p>
+              </li>
+              <li className="mb-2">
+                <p>Key Components in System Design</p>
+              </li>
+              <li className="mb-2">
+                <p> Scalability and Performance</p>
+              </li>
+              <li className="mb-2">
+                <p>Availability and Reliability</p>
+              </li>
+              <li className="mb-2">
+                <p>Security</p>
+              </li>
+              <li className="mb-2">
+                <p>Distributed Systems</p>
+              </li>
+              <li className="mb-2">
+                <p>Eventual Consistency</p>
+              </li>
+              <li className="mb-2">
+                <p>Trade-offs in System Design</p>
+              </li>
+              <li className="mb-2">
+                <p>Case Studies and Practical Examples</p>
+              </li>
+              <li className="mb-2">
+                <p>Designing a Social Media Feed</p>
+              </li>
+              <li className="mb-4">
+                <p>Designing a Scalable E-commerce System</p>
+              </li>
+            </ul>
           </div>
         );
       case 6:
         return (
           <div className="month-info-card-info mt-4">
             <p>Electives</p>
-            {/* Add content for Module 6 */}
+            <ul className="mt-4">
+              <li className="mb-2">
+                <p>Advanced Programming Languages</p>
+              </li>
+              <li className="mb-2">
+                <p>Mobile Application Development</p>
+              </li>
+              <li className="mb-2">
+                <p>Web Development Frameworks</p>
+              </li>
+              <li className="mb-2">
+                <p>Cybersecurity Fundamentals</p>
+              </li>
+              <li className="mb-2">
+                <p>Cloud Computing and DevOps</p>
+              </li>
+              <li className="mb-2">
+                <p> Artificial Intelligence and Machine Learning</p>
+              </li>
+              <li className="mb-2">
+                <p>Data Science and Big Data</p>
+              </li>
+              <li className="mb-2">
+                <p>User Experience (UX) and User Interface (UI) Design</p>
+              </li>
+              <li className="mb-2">
+                <p>Internet of Things (IoT)</p>
+              </li>
+              <li className="mb-2">
+                <p> Blockchain Technology</p>
+              </li>
+              <li className="mb-4">
+                <p>Game Development</p>
+              </li>
+            </ul>
           </div>
         );
       default:
         return null;
     }
-  };
-
-  function handleOccupationChange(occupation) {
-    if (occupation === "employed") {
-      document.getElementById("employedFields").style.display = "block";
-      document.getElementById("studentFields").style.display = "none";
-    } else if (occupation === "student") {
-      document.getElementById("studentFields").style.display = "block";
-      document.getElementById("employedFields").style.display = "none";
-    }
-  }
-
-  const [otherCompanyInputVisible, setOtherCompanyInputVisible] =
-    useState(false);
-
-  const handleOtherChange = () => {
-    setOtherCompanyInputVisible(true);
-  };
-
-  const [isEmployed, setIsEmployed] = useState(true); // Assuming "Employed" is the default
-
-  const handleOccupationToggle = (event) => {
-    setIsEmployed(event.target.checked); // true if checked (Employed), false if unchecked (Student)
   };
 
   // Other existing functions
@@ -228,7 +376,8 @@ export default function SolidEngineer() {
               {/* Download Curriculum button */}
               <div className="fundamentals-box-btn text-center">
                 <a
-                  href="#"
+                  type="button"
+                  className="btn btn-primary"
                   data-bs-toggle="modal"
                   data-bs-target="#downloadCurriculumModal"
                 >
@@ -264,247 +413,7 @@ export default function SolidEngineer() {
         </div>
       </div>
 
-      {/* Modal */}
-      <div
-        className="modal fade downloadCurriculumModal"
-        id="downloadCurriculumModal"
-        tabIndex="-1"
-        aria-labelledby="downloadCurriculumModalLabel"
-        aria-hidden="true"
-      >
-        <div className="modal-dialog modal-lg">
-          <div className="modal-content">
-            <div className="modal-header">
-              <h5 className="modal-title" id="downloadCurriculumModalLabel">
-                Download Curriculum
-              </h5>
-              <button
-                type="button"
-                className="btn-close"
-                data-bs-dismiss="modal"
-                aria-label="Close"
-              ></button>
-            </div>
-            <div className="modal-body">
-              <form>
-                {/* Name Field */}
-                <div className="mb-3">
-                  <input
-                    type="text"
-                    className="form-control"
-                    id="nameInput"
-                    placeholder="Full Name"
-                  />
-                </div>
-
-                {/* Email Field */}
-                <div className="mb-3">
-                  <input
-                    type="email"
-                    className="form-control"
-                    id="emailInput"
-                    placeholder="Email"
-                  />
-                </div>
-
-                {/* Phone Field */}
-                <div className="mb-3">
-                  <input
-                    type="tel"
-                    className="form-control"
-                    id="phoneInput"
-                    placeholder="Phone Number"
-                  />
-                </div>
-
-                {/* Toggle Switch for Occupation */}
-                <div className="mb-3 text-center">
-                  <label className="form-label">Occupation</label>
-                  <div className="d-flex justify-content-center align-items-center">
-                    <span className="me-3">Student</span>
-                    <div className="form-check form-switch">
-                      <input
-                        className="form-check-input"
-                        type="checkbox"
-                        id="occupationSwitch"
-                        onChange={handleOccupationToggle}
-                        checked={isEmployed} // Check based on state
-                      />
-                    </div>
-                    <span className="ms-3">Employed</span>
-                  </div>
-                </div>
-
-                {/* Additional Input Fields for Employed */}
-                <div
-                  id="employedFields"
-                  style={{ display: isEmployed ? "block" : "none" }}
-                >
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="experienceInput"
-                      placeholder="Years of Experience"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="jobTitleInput"
-                      placeholder="Your Job Title"
-                    />
-                  </div>
-                </div>
-
-                {/* Additional Input Fields for Student */}
-                <div
-                  id="studentFields"
-                  style={{ display: isEmployed ? "none" : "block" }}
-                >
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="schoolInput"
-                      placeholder="School/University Name"
-                    />
-                  </div>
-                  <div className="mb-3">
-                    <input
-                      type="text"
-                      className="form-control"
-                      id="degreeInput"
-                      placeholder="Degree Program"
-                    />
-                  </div>
-
-                  {/* Inline Radio Buttons */}
-                  <div className="mb-3">
-                    <label className="form-label me-3">Dream company :</label>
-                    <div className="form-check form-check-inline">
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio1"
-                        value="option1"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="inlineRadio1"
-                      >
-                        Accenture
-                      </label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio2"
-                        value="option2"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="inlineRadio2"
-                      >
-                        Google
-                      </label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio3"
-                        value="option3"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="inlineRadio3"
-                      >
-                        Microsoft
-                      </label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio4"
-                        value="oracle"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="inlineRadio4"
-                      >
-                        Oracle
-                      </label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadio5"
-                        value="ibm"
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="inlineRadio5"
-                      >
-                        IBM
-                      </label>
-                    </div>
-                    <div className="form-check form-check-inline">
-                      <input
-                        className="form-check-input"
-                        type="radio"
-                        name="inlineRadioOptions"
-                        id="inlineRadioOther"
-                        value="other"
-                        onChange={handleOtherChange}
-                      />
-                      <label
-                        className="form-check-label"
-                        htmlFor="inlineRadioOther"
-                      >
-                        Other
-                      </label>
-                    </div>
-                  </div>
-
-                  {/* Input for Other Company */}
-                  {otherCompanyInputVisible && (
-                    <div className="mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="otherCompanyInput"
-                        placeholder="Please specify"
-                      />
-                    </div>
-                  )}
-                </div>
-              </form>
-            </div>
-            <div className="modal-footer">
-              <button
-                type="button"
-                className="btn btn-secondary"
-                data-bs-dismiss="modal"
-              >
-                Close
-              </button>
-              <button type="button" className="btn btn-primary">
-                Send Curriculum
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <DownloadCurriculum />
     </>
   );
 }

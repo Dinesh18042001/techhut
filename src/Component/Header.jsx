@@ -61,9 +61,16 @@ export default function Header() {
           {/* Main navigation links */}
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav ms-auto mb-lg-0">
+
+            <li className="nav-item">
+                <Link className="nav-link active" aria-current="page" to="/">
+                <i class="fa-solid fa-house"></i>
+                </Link>
+              </li>
+
               <li className="nav-item">
                 <Link className="nav-link active" aria-current="page" to="/">
-                  Mentors
+                Mentors
                 </Link>
               </li>
               <li className="nav-item dropdown">
@@ -85,7 +92,7 @@ export default function Header() {
                   </li>
                   <li>
                     <Link className="dropdown-item" to="/digitalmarketermain">
-                    Digital Marketer
+                      Digital Marketing
                     </Link>
                   </li>
                 </ul>

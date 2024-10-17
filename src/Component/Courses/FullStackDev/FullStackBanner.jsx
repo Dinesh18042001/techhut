@@ -132,18 +132,7 @@ export default function FullStackBanner() {
                   <form onSubmit={handleSubmit}>
                     <div className="row g-4">
                       {/* Program Interested */}
-                      <div className="col-12">
-                        <input
-                          type="text"
-                          name="program"
-                          className="form-control"
-                          id="program"
-                          placeholder="Program interested"
-                          value={formData.program}
-                          onChange={handleChange}
-                        />
-                        {errors.program && <small className="text-danger">{errors.program}</small>}
-                      </div>
+                     
 
                       {/* Name */}
                       <div className="col-12">
@@ -180,11 +169,23 @@ export default function FullStackBanner() {
                           name="number"
                           className="form-control"
                           id="number"
-                          placeholder="Number"
+                          placeholder="Phone No"
                           value={formData.number}
                           onChange={handleChange}
                         />
                         {errors.number && <small className="text-danger">{errors.number}</small>}
+                      </div>
+                      <div className="col-12">
+                        <input
+                          type="text"
+                          name="program"
+                          className="form-control"
+                          id="program"
+                          placeholder="Address"
+                          value={formData.program}
+                          onChange={handleChange}
+                        />
+                        {errors.program && <small className="text-danger">{errors.program}</small>}
                       </div>
 
                       {/* Submit Button */}
