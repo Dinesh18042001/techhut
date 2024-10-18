@@ -36,7 +36,7 @@ export default function CareerPath() {
 
               <div className="item">
 
-                <div className="silider-box mb-3">
+              <div className="silider-box mb-3">
                   <div className="main-silider-box d-flex justify-content-center align-items-center text-center">
                     <div className="icon-box">
                       <span>
