@@ -189,7 +189,6 @@ export default function Banner() {
       <Questions />
       {/* Apply Modal */}
       <Apply />
-
     </>
   );
 }

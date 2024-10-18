@@ -47,11 +47,11 @@ export default function TechCard() {
                       <h6>Meet Sayanika Dutta</h6>
                     </div>
 
-                    <div className="custom-card-icon">
+                    {/* <div className="custom-card-icon">
                       <a href="#">
                         <i className="fa-brands fa-linkedin-in"></i>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <p className="card-text">
                     “I knew it would be a great start to start with TechHut.”
@@ -102,11 +102,11 @@ export default function TechCard() {
                       <h6>Meet Adriza Mishra</h6>
                     </div>
 
-                    <div className="custom-card-icon">
+                    {/* <div className="custom-card-icon">
                       <a href="#">
                         <i className="fa-brands fa-linkedin-in"></i>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <p className="card-text">
                     “TechHut helped me overcome my fear of coding.”
@@ -157,11 +157,11 @@ export default function TechCard() {
                       <h6>Meet Piyush</h6>
                     </div>
 
-                    <div className="custom-card-icon">
+                    {/* <div className="custom-card-icon">
                       <a href="#">
                         <i className="fa-brands fa-linkedin-in"></i>
                       </a>
-                    </div>
+                    </div> */}
                   </div>
                   <p className="card-text">
                   "I always understood and found help throughout the entire journey."

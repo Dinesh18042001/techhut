@@ -1,5 +1,7 @@
+
 import React, { useState } from "react";
 import DownloadCurriculum from "../../Modals/DownloadCurriculum";
+
 export default function SolidEngineer() {
   const [activeModule, setActiveModule] = useState(1);
 
@@ -264,114 +266,46 @@ export default function SolidEngineer() {
         <div className="container">
           <div className="solidengineer-section-tittle">
             <h2 className="text-center">
-              Curriculum is designed to make you a <span>solid engineer</span>
+              Curriculum is designed to make you a <span>solid engineer</span>
             </h2>
           </div>
 
           <div className="row mt-5">
             <div className="col-lg-6 mb-4">
               {/* Module Tabs */}
-              <a onClick={() => setActiveModule(1)}>
-                <div className="fundamentals-box position-relative mb-3">
-                  <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
-                    <div className="fundamentals-box-card-num">
-                      <h2>01</h2>
+              {[1, 2, 3, 4, 5, 6].map((module) => (
+                <a key={module} onClick={() => setActiveModule(module)}>
+                  <div
+                    className={`fundamentals-box position-relative mb-3 ${
+                      activeModule === module ? "active" : ""
+                    }`}
+                    style={{
+                      backgroundColor: activeModule === module ? "#0F172A" : "#f8f9fa", // Change colors as needed
+                      color: activeModule === module ? "#fff" : "#000",
+                    }}
+                  >
+                    <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
+                      <div className="fundamentals-box-card-num">
+                        <h2>{String(module).padStart(2, '0')}</h2>
+                      </div>
+                      <div className="fundamentals-box-card-info">
+                        <p>Module</p>
+                        <h6>
+                          {module === 1 && "Programming Language Fundamentals"}
+                          {module === 2 && "Data Structures and Algorithms"}
+                          {module === 3 && "SQL/MongoDB"}
+                          {module === 4 && "LLD and Project Specialisations"}
+                          {module === 5 && "System Design Essentials"}
+                          {module === 6 && "Electives"}
+                        </h6>
+                      </div>
                     </div>
-                    <div className="fundamentals-box-card-info">
-                      <p>Module</p>
-                      <h6>Programming Language Fundamentals</h6>
-                    </div>
-                  </div>
-                  <div className="months-logo">
-                    <p>2 Months</p>
-                  </div>
-                </div>
-              </a>
-
-              <a onClick={() => setActiveModule(2)}>
-                <div className="fundamentals-box position-relative mb-3">
-                  <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
-                    <div className="fundamentals-box-card-num">
-                      <h2>02</h2>
-                    </div>
-                    <div className="fundamentals-box-card-info">
-                      <p>Module</p>
-                      <h6>Data Structures and Algorithms</h6>
-                    </div>
-                  </div>
-                  <div className="months-logo">
-                    <p>2 Months</p>
-                  </div>
-                </div>
-              </a>
-
-              <a onClick={() => setActiveModule(3)}>
-                <div className="fundamentals-box position-relative mb-3">
-                  <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
-                    <div className="fundamentals-box-card-num">
-                      <h2>03</h2>
-                    </div>
-                    <div className="fundamentals-box-card-info">
-                      <p>Module</p>
-                      <h6>SQL/MongoDB</h6>
+                    <div className="months-logo">
+                      <p>2 Months</p>
                     </div>
                   </div>
-                  <div className="months-logo">
-                    <p>2 Months</p>
-                  </div>
-                </div>
-              </a>
-
-              <a onClick={() => setActiveModule(4)}>
-                <div className="fundamentals-box position-relative mb-3">
-                  <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
-                    <div className="fundamentals-box-card-num">
-                      <h2>04</h2>
-                    </div>
-                    <div className="fundamentals-box-card-info">
-                      <p>Module</p>
-                      <h6>LLD and Project Specialisations</h6>
-                    </div>
-                  </div>
-                  <div className="months-logo">
-                    <p>2 Months</p>
-                  </div>
-                </div>
-              </a>
-
-              <a onClick={() => setActiveModule(5)}>
-                <div className="fundamentals-box position-relative mb-3">
-                  <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
-                    <div className="fundamentals-box-card-num">
-                      <h2>05</h2>
-                    </div>
-                    <div className="fundamentals-box-card-info">
-                      <p>Module</p>
-                      <h6>System Design Essentials</h6>
-                    </div>
-                  </div>
-                  <div className="months-logo">
-                    <p>2 Months</p>
-                  </div>
-                </div>
-              </a>
-
-              <a onClick={() => setActiveModule(6)}>
-                <div className="fundamentals-box position-relative mb-3">
-                  <div className="fundamentals-box-card d-flex align-items-center justify-content-start gap-3">
-                    <div className="fundamentals-box-card-num">
-                      <h2>06</h2>
-                    </div>
-                    <div className="fundamentals-box-card-info">
-                      <p>Module</p>
-                      <h6>Electives</h6>
-                    </div>
-                  </div>
-                  <div className="months-logo">
-                    <p>2 Months</p>
-                  </div>
-                </div>
-              </a>
+                </a>
+              ))}
 
               {/* Download Curriculum button */}
               <div className="fundamentals-box-btn text-center">

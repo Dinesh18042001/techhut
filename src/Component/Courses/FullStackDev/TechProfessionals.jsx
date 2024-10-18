@@ -30,12 +30,12 @@ export default function TechProfessionals() {
                   <i class="fa-solid fa-download ms-2"></i>
                 </a>
               </div>
-              <div className="col-12 col-sm-6 col-md-auto techprofessionals-box-two">
+              {/* <div className="col-12 col-sm-6 col-md-auto techprofessionals-box-two">
                 <a href="#">
                   Download Placement Stats{" "}
                   <i class="fa-solid fa-download ms-2"></i>
                 </a>
-              </div>
+              </div> */}
             </div>
           </div>
           <TechCard/>
