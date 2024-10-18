@@ -59,7 +59,7 @@ const router = createBrowserRouter([
       { path: '/termscondition', element: <TermsCondition/>},
       { path: '/softwareprogrammer', element: <SoftwareProgrammer/>},
       { path: '/digitalmarketer', element: <DigitalMarketer/>},
-      { path: '/fullstackdev', element: <FullStackDev/>},
+      { path: '/fullstackdevelopment', element: <FullStackDev/>},
       { path: '/digitalmarketermain', element: <DigitalMarketerMain/>},
       
     ],

@@ -86,7 +86,7 @@ export default function Header() {
                 </Link>
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                   <li>
-                    <Link className="dropdown-item" to="/fullstackdev">
+                    <Link className="dropdown-item" to="/fullstackdevelopment">
                     full stack development
                     </Link>
                   </li>
