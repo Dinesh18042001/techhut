@@ -43,9 +43,10 @@ export default function FullStackBanner() {
     }
 
     // Check if number has exactly 11 digits
-    if (formData.number && formData.number.length !== 11) {
-      newErrors.number = "Phone number must be exactly 11 digits";
+    if (formData.number && (formData.number.length < 10 || formData.number.length > 12)) {
+      newErrors.number = "Phone number must be between 10 and 12 digits";
     }
+    
 
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0; // Return true if no errors
