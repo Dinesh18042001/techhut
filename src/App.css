@@ -424,6 +424,11 @@ ul.dropdown-menu {
   margin-right: 8px;
   color: #fff;
   font-size: 18px;
+  transition: 0.3s all;
+}
+
+.banner-info .banner-icon-box i:hover {
+    scale: 1.05;
 }
 
 .icon2 {
@@ -449,7 +454,7 @@ ul.dropdown-menu {
 }
 
 .banner-card:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 
@@ -490,7 +495,7 @@ ul.dropdown-menu {
 }
 
 .banner-card2:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
 }
 
 
@@ -999,6 +1004,9 @@ ul.dropdown-menu {
 }
 
 
+.socal-link span a{
+  color: #fff;
+}
 
 .socal-link span {
   background-color: var(--primary-color);
@@ -1010,6 +1018,11 @@ ul.dropdown-menu {
   align-items: center;
   color: white;
   font-size: 18px;
+  transition: 0.3s all;
+}
+
+.socal-link span:hover{
+  scale: 1.05;
 }
 
 @media (max-width: 991px) {

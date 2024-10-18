@@ -26,13 +26,13 @@ export default function Footer() {
                 <div className="col-lg-4">
                   <div className="socal-link d-flex gap-3 justify-content-center justify-content-lg-start sm-mt-4">
                     <span>
-                      <i class="fa-brands fa-facebook-f"></i>
+                      <Link to="https://www.facebook.com/techhutacademy/" target="_blank"><i class="fa-brands fa-facebook-f"></i></Link>
                     </span>
                     <span>
-                      <i class="fa-brands fa-linkedin-in"></i>
+                      <Link to="https://www.linkedin.com/company/techhutacademy/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></Link>
                     </span>
                     <span>
-                      <i class="fa-brands fa-instagram"></i>
+                      <Link to="https://www.instagram.com/techhutacademy/" target="_blank"><i class="fa-brands fa-instagram"></i></Link>
                     </span>
                   </div>
                   
