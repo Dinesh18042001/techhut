@@ -130,7 +130,7 @@ export default function Apply() {
             <div className="modal-body">
               <div className="modal-body-info">
                 <form id="applyForm" onSubmit={handleSubmit}>
-                  <div className="modal-body-qus mb-3">
+                  {/* <div className="modal-body-qus mb-3">
                     <h6>Your Topic of interest? <span>*</span></h6>
                   </div>
                   <div className="row">
@@ -154,7 +154,7 @@ export default function Apply() {
                         </div>
                       </div>
                     ))}
-                  </div>
+                  </div> */}
 
                   <div className="modal-body-qus mb-3">
                     <h6>Are you a College Student, Working Professional, or Graduated but not working? <span>*</span></h6>
@@ -184,13 +184,13 @@ export default function Apply() {
 
                   <div className="row form-main mb-3 mt-4 ">
                     <div className="col-lg-6 col-md-6 mb-3">
-                      <label htmlFor="fullName" className="form-label">Candidate Full Name *</label>
+                      {/* <label htmlFor="fullName" className="form-label">Full Name *</label> */}
                       <input
                         type="text"
                         className="form-control"
                         id="fullName"
                         name="fullName"
-                        placeholder="Candidate Full Name *"
+                        placeholder="Full Name *"
                         value={formData.fullName}
                         onChange={handleChange}
                         required
@@ -198,7 +198,7 @@ export default function Apply() {
                     </div>
 
                     <div className="col-lg-6 col-md-6 mb-3">
-                      <label htmlFor="email" className="form-label">Email id *</label>
+                      {/* <label htmlFor="email" className="form-label">Email id *</label> */}
                       <input
                         type="email"
                         className="form-control"
@@ -212,7 +212,7 @@ export default function Apply() {
                     </div>
 
                     <div className="col-lg-6 col-md-6 mb-3">
-                      <label htmlFor="phone" className="form-label">Phone Number *</label>
+                      {/* <label htmlFor="phone" className="form-label">Phone Number *</label> */}
                       <input
                         type="tel"
                         className="form-control"
@@ -226,7 +226,7 @@ export default function Apply() {
                     </div>
 
                     <div className="col-lg-6 col-md-6 mb-3">
-                      <label htmlFor="college" className="form-label">College Name *</label>
+                      {/* <label htmlFor="college" className="form-label">College Name *</label> */}
                       <input
                         type="text"
                         className="form-control"
@@ -240,7 +240,7 @@ export default function Apply() {
                     </div>
 
                     <div className="col-lg-6 col-md-6 mb-3">
-                      <label htmlFor="graduationYear" className="form-label">Graduation Year *</label>
+                      {/* <label htmlFor="graduationYear" className="form-label">Graduation Year *</label> */}
                       <select
                         className="form-select"
                         id="graduationYear"
@@ -256,7 +256,7 @@ export default function Apply() {
                       </select>
                     </div>
 
-                    <div className="col-lg-6 col-md-6 mb-3">
+                    {/* <div className="col-lg-6 col-md-6 mb-3">
                       <label htmlFor="dreamCompany" className="form-label">Your Dream Company *</label>
                       <input
                         type="text"
@@ -268,10 +268,10 @@ export default function Apply() {
                         onChange={handleChange}
                         required
                       />
-                    </div>
+                    </div> */}
 
                     <div className="col-lg-12 mb-3">
-                      <label htmlFor="message" className="form-label">Any message? *</label>
+                      {/* <label htmlFor="message" className="form-label">Any message? *</label> */}
                       <textarea
                         className="form-control"
                         id="message"

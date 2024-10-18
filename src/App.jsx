@@ -23,12 +23,14 @@ import DigitalMarketer from './Component/DigitalMarketer';
 import FullStackDev from './Component/Courses/FullStackDev/FullStackDev';
 import DigitalMarketerMain from './Component/Courses/DigitalMarketer/DigitalMarketerMain';
 import ModalPopup from './Component/Modals/ModalPopup';
+import { BackToTop } from './Component/BackToTop';
 
 
 const Layout = () => {
   return (
     <>
       <Header />
+      <BackToTop/>
       <ScrollToTop/>
       <Outlet/>
       <ModalPopup/>
