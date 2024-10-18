@@ -87,11 +87,12 @@ h6 {
   color: #000;
   margin: 9px;
   text-transform: uppercase;
+  transition: 0.3s all;
 }
 
-/* .nav-item a:hover {
+.nav-item a:hover {
   color: var(--primary-color) !important;
-} */
+}
 
 a#mobileServicesDropdown {
   color: #000;
