@@ -42,7 +42,7 @@ export default function Footer() {
           </div>
           <hr />
           <div className="company-name text-center mb-4">
-            <a href="#">Copyright© 2024 TechHut, All rights reserved</a>
+            <a href="#">Copyright © 2024 ,Designed by Webpristine Technologies</a>
           </div>
         </div>
       </div>
