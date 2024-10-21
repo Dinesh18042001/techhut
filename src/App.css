@@ -667,7 +667,7 @@ ul.dropdown-menu {
 
 .carrer-card-tittle h5 {
   font-weight: 600;
-  font-size: 17px;
+  font-size: 22px;
 }
 
 .carrer-card h6 {
@@ -752,7 +752,7 @@ ul.dropdown-menu {
 
 .mentorship-card-info p {
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .mentorship-card-img img {
@@ -1830,6 +1830,7 @@ textarea {
   border-radius: 8px;
   overflow: hidden;
   transition: transform 0.3s ease;
+  height: 500px !important;
 }
 
 .custom-card .card-img {
@@ -1892,6 +1893,7 @@ textarea {
 
 .custom-card-company-img img {
   width: 150px !important;
+  padding: 10px;
 }
 
 .bg-img {

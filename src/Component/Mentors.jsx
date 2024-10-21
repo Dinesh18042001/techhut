@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Mentors() {
   return (
-    <div className="mentoes-section  mt-4 mb-5">
+    <div className="mentoes-section mt-4 mb-5" id="mentoes">
       <div className="container">
         <div className="mentoes-section-tittle mb-5">
           <h2 className="text-center">

@@ -1,11 +1,12 @@
-import React from "react";
+import React from 'react'
 import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
-export default function TechCard() {
-  // Owl Carousel settings
-  const options = {
+export default function DigitalTechCard() {
+
+// Owl Carousel settings
+const options = {
     loop: true,
     margin: 10,
     nav: false,
@@ -26,17 +27,18 @@ export default function TechCard() {
     },
   };
 
+
   return (
     <>
-      <div className="techcard-section mt-5">
+     <div className="techcard-section mt-5">
         <div className="container">
           <OwlCarousel className="owl-theme" {...options}>
             {/* First Card */}
             <div className="item ">
-              <div className="custom-card position-relative h-100">
+              <div className="custom-card position-relative">
                 <div className="card-img">
                   <img
-                    src="./assets/TechCard/img1.jpg"
+                    src="./assets/TechCard/img4.jpg"
                     alt="Card Image"
                     className="img-fluid"
                   />
@@ -62,7 +64,7 @@ export default function TechCard() {
                     <p>Sayanika cracked a career at</p>
                     <div className="custom-card-company-img d-flex justify-content-center">
                       <img
-                        src="./assets/TechCard/TATA Elxsi.jpg"
+                        src="./assets/TechCard/microsoft.png"
                         alt="Company Logo"
                         className="img-fluid"
                       />
@@ -91,7 +93,7 @@ export default function TechCard() {
               <div className="custom-card position-relative h-100">
                 <div className="card-img">
                   <img
-                    src="./assets/TechCard/img2.png"
+                    src="./assets/TechCard/img5.jpg"
                     alt="Card Image"
                     className="img-fluid"
                   />
@@ -115,9 +117,9 @@ export default function TechCard() {
 
                   <div className="custom-card-company text-center">
                     <p>Sayanika cracked a career at</p>
-                    <div className="custom-card-company-img d-flex justify-content-center mt-4">
+                    <div className="custom-card-company-img d-flex justify-content-center">
                       <img
-                        src="./assets/TechCard/honeywell-logo.png"
+                        src="./assets/TechCard/Meta-Logo.png"
                         alt="Company Logo"
                         className="img-fluid"
                       />
@@ -132,7 +134,7 @@ export default function TechCard() {
               <div className="custom-card-bottom-box position-relative mt-5">
                 <h6 className="text-center">
                 Student <i class="fa-solid fa-arrow-right me-3 ms-3"></i>{" "}
-                Software Intern
+                Marketing Intern
                 </h6>
 
                 <div className="custom-card-bottom-box-bg">
@@ -146,7 +148,7 @@ export default function TechCard() {
               <div className="custom-card position-relative h-100">
                 <div className="card-img">
                   <img
-                    src="./assets/TechCard/img3.png"
+                    src="./assets/TechCard/img6.jpg"
                     alt="Card Image"
                     className="img-fluid"
                   />
@@ -170,9 +172,9 @@ export default function TechCard() {
 
                   <div className="custom-card-company text-center">
                     <p>Sayanika cracked a career at</p>
-                    <div className="custom-card-company-img d-flex justify-content-center mt-3">
+                    <div className="custom-card-company-img d-flex justify-content-center mt-4">
                       <img
-                        src="./assets/TechCard/Google.png"
+                        src="./assets/TechCard/Amazon.png"
                         alt="Company Logo"
                         className="img-fluid"
                       />
@@ -200,5 +202,5 @@ export default function TechCard() {
         </div>
       </div>
     </>
-  );
+  )
 }

@@ -91,7 +91,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/digitalmarketermain">
+                    <Link className="dropdown-item" to="/digitalmarketingdevelopment">
                       Digital Marketing
                     </Link>
                   </li>
@@ -153,7 +153,7 @@ export default function Header() {
         <div className="offcanvas-body">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <a className="nav-link" href="#">
+              <a className="nav-link" to="#mentoes-section">
                 Mentors
               </a>
             </li>
@@ -175,7 +175,7 @@ export default function Header() {
                     </Link>
                   </li>
                   <li>
-                    <Link className="dropdown-item" to="/digitalmarketermain">
+                    <Link className="dropdown-item" to="/digitalmarketingdevelopment">
                     Digital Marketer
                     </Link>
                   </li>

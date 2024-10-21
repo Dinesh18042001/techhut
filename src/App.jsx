@@ -46,7 +46,6 @@ const router = createBrowserRouter([
     children: [
       { path: '/', element: <Banner /> }, 
       { path: '/career-path', element: <CareerPath /> },
-      { path: '/mentors', element: <Mentors /> },
       { path: '/career', element: <Career /> },
       { path: '/mentorship', element: <Mentorship /> },
       { path: '/companies', element: <Companies /> },
@@ -60,8 +59,7 @@ const router = createBrowserRouter([
       { path: '/softwareprogrammer', element: <SoftwareProgrammer/>},
       { path: '/digitalmarketer', element: <DigitalMarketer/>},
       { path: '/fullstackdevelopment', element: <FullStackDev/>},
-      { path: '/digitalmarketermain', element: <DigitalMarketerMain/>},
-      
+      { path: '/digitalmarketingdevelopment', element: <DigitalMarketerMain/>},
     ],
   },
 ]);

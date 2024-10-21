@@ -24,7 +24,7 @@ export default function Career() {
                     <div className="carrer-card h-100">
                         <div className="carrer-card-tittle mb-2">
                             <img src="./assets/caeeer/tittle-1.png" alt="" />
-                            <h5>full stack development</h5>
+                            <h5>Full stack development</h5>
                         </div>
 
                         <div className="carrer-card-tittle-body p-3">
@@ -64,7 +64,7 @@ export default function Career() {
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
-                            <Link to="/digitalmarketermain">Learn More</Link>
+                            <Link to="/digitalmarketingdevelopment">Learn More</Link>
                         </div>
                         
                     </div>

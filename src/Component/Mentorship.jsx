@@ -120,7 +120,7 @@ export default function Mentorship() {
                 </p>
               </div>
               <div className="mentorship-card-img">
-                <img src="./assets/mentorship/card6.png" alt="" />
+                <img src="./assets/mentorship/img6.png" alt="" />
               </div>
               <div className="mentorship-card-icon">
                 <img src="./assets/mentorship/card-icon2.png" alt="" />
