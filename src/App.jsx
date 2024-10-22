@@ -54,6 +54,7 @@ const router = createBrowserRouter([
       { path: '/blogs', element: <Blogs/> },
       { path: '/courses', element: <Courses/>},
       { path: '/refund', element: <Refund/>},
+      { path: '/mentors', element: <Mentors/>},
       { path: '/privacypolicy', element: <PrivacyPolicy/>},
       { path: '/termscondition', element: <TermsCondition/>},
       { path: '/softwareprogrammer', element: <SoftwareProgrammer/>},

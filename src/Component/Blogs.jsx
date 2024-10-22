@@ -177,7 +177,7 @@ export default function Blogs() {
         </div>
       </div>
       <CareerPath />
-      <CareerpathMain/>
+      {/* <CareerpathMain/> */}
       <Questions />
     </>
   );
