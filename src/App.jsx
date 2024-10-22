@@ -24,6 +24,8 @@ import FullStackDev from './Component/Courses/FullStackDev/FullStackDev';
 import DigitalMarketerMain from './Component/Courses/DigitalMarketer/DigitalMarketerMain';
 import ModalPopup from './Component/Modals/ModalPopup';
 import { BackToTop } from './Component/BackToTop';
+import Placements from './Component/Placements/Placements';
+import Features from './Component/Features/Features';
 
 
 const Layout = () => {
@@ -61,6 +63,9 @@ const router = createBrowserRouter([
       { path: '/digitalmarketer', element: <DigitalMarketer/>},
       { path: '/fullstackdevelopment', element: <FullStackDev/>},
       { path: '/digitalmarketingdevelopment', element: <DigitalMarketerMain/>},
+      { path: '/digitalmarketingdevelopment', element: <DigitalMarketerMain/>},
+      { path: '/placements', element: <Placements/>},
+      { path: '/features', element: <Features/>},
     ],
   },
 ]);

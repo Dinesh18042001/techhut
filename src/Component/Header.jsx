@@ -373,14 +373,14 @@ export default function Header() {
               </li>
 
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/features">
                   Features
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#">
+                <Link className="nav-link active" aria-current="page" to="/placements">
                   Placements
-                </a>
+                </Link>
               </li>
               <li className="nav-item">
                 <Link
