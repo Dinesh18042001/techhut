@@ -2293,14 +2293,14 @@ textarea {
 }
 
 .footer-nav-link-main img{
-  width: 30px;
+  width: 22px;
 }
 
 .footer-nav-link-main2 img{
-   width: 28px;
+   width: 23px;
 }
 .footer-nav-link-main3 img{
-  width: 33px;
+  width: 28px;
 }
 /* footer-nav-section end */
 
@@ -2350,9 +2350,5 @@ textarea {
   margin: 0;
 }
 
-/* Optional: Hover effect */
-.footer-nav-link a:hover {
-  color: #1C8F44; /* Example: green color on hover */
-}
 
 
