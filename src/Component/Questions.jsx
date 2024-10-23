@@ -65,7 +65,7 @@ export default function Questions() {
                         aria-expanded="false"
                         aria-controls="collapseTwo"
                       >
-                       <h6>How long does it take to see progress with a Mentor?</h6>
+                       <h6>How Long Does It Take to See Progress with a Mentor?</h6>
                       </button>
                     </h2>
                     <div
@@ -76,10 +76,7 @@ export default function Questions() {
                     >
                       <div className="accordion-body">
                         <p>
-                          TechHut offers a variety of programs, including
-                          full-stack web development, data science, digital
-                          marketing, and more. Explore different tracks to
-                          enhance your skills and career.
+                        You can expect to see progress with a mentor within a few weeks to a few months, depending on your goals and commitment.
                         </p>
                       </div>
                     </div>
@@ -96,7 +93,8 @@ export default function Questions() {
                         aria-expanded="false"
                         aria-controls="collapseThree"
                       >
-                        <h6>Are there any certifications offered through the mentorship program?</h6>
+                        <h6>Are There Any Certifications Offered Through the Mentorship Program?
+                        </h6>
                       </button>
                     </h2>
                     <div
@@ -107,9 +105,7 @@ export default function Questions() {
                     >
                       <div className="accordion-body">
                         <p>
-                          TechHut not only teaches skills but also helps with
-                          job placement through partnerships with top companies
-                          and career guidance from industry experts.
+                        Yes, the mentorship program provides various certifications to enhance your skills and boost your resume.
                         </p>
                       </div>
                     </div>
@@ -126,7 +122,8 @@ export default function Questions() {
                         aria-expanded="false"
                         aria-controls="collapseFour"
                       >
-                        <h6>What kind of projects will I work on during the mentorship?</h6>
+                        <h6>What Kind of Projects Will I Work On During the Mentorship?
+                        </h6>
                       </button>
                     </h2>
                     <div
@@ -137,9 +134,7 @@ export default function Questions() {
                     >
                       <div className="accordion-body">
                         <p>
-                          TechHut offers 24/7 mentor support, community
-                          discussions, and live help sessions to ensure you
-                          never feel stuck while learning.
+                        You will work on various projects tailored to your goals, including practical assignments, case studies, and collaborative efforts.
                         </p>
                       </div>
                     </div>
@@ -156,7 +151,7 @@ export default function Questions() {
                         aria-expanded="false"
                         aria-controls="collapseFive"
                       >
-                        <h6>Can I get career advice along with technical guidance?</h6>
+                        <h6>Can I Get Career Advice Along with Technical Assistance?</h6>
                       </button>
                     </h2>
                     <div
@@ -167,10 +162,7 @@ export default function Questions() {
                     >
                       <div className="accordion-body">
                         <p>
-                          Yes, TechHut offers a range of free resources,
-                          including introductory courses, webinars, and access
-                          to our blog with tips and tricks for growing your
-                          skills.
+                        Yes, you can receive both career advice and technical assistance in the mentorship program. This dual support helps you navigate your career path while enhancing your technical skills.
                         </p>
                       </div>
                     </div>

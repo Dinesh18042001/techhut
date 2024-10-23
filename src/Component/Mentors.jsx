@@ -22,8 +22,8 @@ export default function Mentors() {
                   <img src="./assets/Mentors/img1.jpg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
-                  <h6>Arpit Bhushan Sharma</h6>
-                  <p>Gupshup | SDE 2</p>
+                  <h6>Virindra Singh</h6>
+                  <p>Daxko India | Senior Engineer</p>
                 </div>
               </div>
               <hr />
@@ -50,11 +50,11 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img2.jpg" alt="" />
+                  <img src="./assets/Mentors/img2.webp" alt="" />
                 </div>
                 <div className="mentoes-card-name">
-                  <h6>Amazon Rusiya</h6>
-                  <p>Gupshup | SDE 2</p>
+                  <h6>Mahendra Singh</h6>
+                  <p>Cognizant | Sr. Associate</p>
                 </div>
               </div>
               <hr />
@@ -81,11 +81,11 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img3.jpg" alt="" />
+                  <img src="./assets/Mentors/img3.jpeg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
-                  <h6>Arpit Bhushan Sharma</h6>
-                  <p>Sandeep SG | SDE 3</p>
+                  <h6>Simpy Gupta</h6>
+                  <p>Accenture | Application Development Team Lead</p>
                 </div>
               </div>
               <hr />
@@ -112,11 +112,11 @@ export default function Mentors() {
             <div className="mentoes-card">
               <div className="mentoes-card-tittle d-flex align-items-center gap-3">
                 <div className="mentoes-card-img">
-                  <img src="./assets/Mentors/img4.jpg" alt="" />
+                  <img src="./assets/Mentors/img4.jpeg" alt="" />
                 </div>
                 <div className="mentoes-card-name">
-                  <h6>Raveet Kumar</h6>
-                  <p>Google | SWE 2</p>
+                  <h6>Akshat Gupta</h6>
+                  <p>PhonePe | Software Engineer</p>
                 </div>
               </div>
               <hr />

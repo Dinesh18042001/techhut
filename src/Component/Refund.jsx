@@ -11,6 +11,7 @@ export default function Refund() {
             </h2>
           </div>
           <div className="refund-section-info">
+            <p>At TechHut, your satisfaction is our priority. If for any reason you are not fully satisfied with the program, we offer a flexible refund policy to ensure a smooth and transparent process.</p>
             <p>
               For our online sessions, we offer a 100% refund if a request is
               made within 7 days of the session's start date. After 7 days, fees
@@ -22,11 +23,10 @@ export default function Refund() {
             </p>
             <ul>
               <li>
-                <p>
-                  Send an email with the subject "Session refund | Registered
-                  phone number" (make sure to include your registered phone
-                  number in the subject line).
-                </p>
+              <p>
+    For any refund requests, please contact <a href="mailto:refund@techhutacademy.com">refund@techhutacademy.com</a> with the subject line: "Refund Request | [Your Registered Email ID]." Be sure to include your registered email address in the subject line to ensure a smooth and prompt refund process.
+</p>
+
               </li>
               <li>
                 <p>

@@ -38,18 +38,22 @@ p {
 h6 {
   margin-bottom: 0;
   font-weight: 500;
+  padding: 5px;
+}
+.owl-carousel{
+  z-index: unset;
 }
 
 
 /* BackToTop   */
-.btt{
+.btt {
   position: fixed;
   bottom: 20px;
   right: 20px;
   border: 1px solid #fff;
   border-radius: 50px;
   padding: 5px;
-  background-color:var(--primary-color);
+  background-color: var(--primary-color);
   height: 45px;
   width: 45px;
   z-index: 99999;
@@ -361,20 +365,20 @@ ul.dropdown-menu {
 
 .baneer-section .banner-main-box .banner-img img {
   width: 100%;
-  height: 600px;
+  height: 550px;
   object-fit: cover;
 }
 
 @media (max-width: 991px) {
   .baneer-section .banner-main-box .banner-img img {
-    height: 1200px;
+    height: 1000px;
 
   }
 }
 
 @media (max-width: 576px) {
   .baneer-section .banner-main-box .banner-img img {
-    height: 1300px;
+    height: 1100px;
 
   }
 }
@@ -428,7 +432,7 @@ ul.dropdown-menu {
 }
 
 .banner-info .banner-icon-box i:hover {
-    scale: 1.05;
+  scale: 1.05;
 }
 
 .icon2 {
@@ -589,16 +593,20 @@ ul.dropdown-menu {
   box-shadow: 0px 4px 4px 0px #4a494933;
 }
 
-.banner-btn .banner-btn-2:hover {
-  background: var(--primary-color);
-  color: #fff;
-}
+
 
 .banner-btn .banner-btn-2 a {
   text-decoration: none;
   color: #000;
 }
 
+.banner-btn .banner-btn-2:hover {
+  background: var(--primary-color);
+  color: #fff;
+}
+.banner-btn .banner-btn-2:hover a{
+  color: #fff;
+}
 
 .baneer-section-side-color {
   position: absolute;
@@ -607,7 +615,7 @@ ul.dropdown-menu {
   z-index: -1;
 }
 
-.baneer-section-side-color2{
+.baneer-section-side-color2 {
   position: absolute;
   bottom: 0;
   right: 0;
@@ -653,7 +661,7 @@ ul.dropdown-menu {
 }
 
 .carrer-card-tittle {
-  background: #FFF5E5;
+  background: #FFE5E6;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -685,7 +693,7 @@ ul.dropdown-menu {
 .carrer-card-tittle-body p {
   margin-bottom: 16px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .carrer-card-tittle-body p i {
@@ -754,7 +762,7 @@ ul.dropdown-menu {
 
 .mentorship-card-info p {
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
 }
 
 .mentorship-card-img img {
@@ -829,7 +837,7 @@ ul.dropdown-menu {
   object-fit: contain;
 }
 
-.companies-section-title-img img{
+.companies-section-title-img img {
   width: 300px;
 }
 
@@ -890,7 +898,7 @@ ul.dropdown-menu {
 
 .alumuisay-card-main-info p {
   font-weight: 400;
-  font-weight: 15px !important;
+  font-size: 13px !important;
 }
 
 .alumuisay-card-main-info .ratting {
@@ -960,6 +968,12 @@ ul.dropdown-menu {
 }
 
 
+@media (max-width: 991px) {
+  .footer-section{
+    margin-bottom: 100px;
+  }
+}
+
 .footer-section .footer-logo img {
   width: 130px;
 }
@@ -1006,7 +1020,7 @@ ul.dropdown-menu {
 }
 
 
-.socal-link span a{
+.socal-link span a {
   color: #fff;
 }
 
@@ -1023,7 +1037,7 @@ ul.dropdown-menu {
   transition: 0.3s all;
 }
 
-.socal-link span:hover{
+.socal-link span:hover {
   scale: 1.05;
 }
 
@@ -1132,7 +1146,7 @@ ul.dropdown-menu {
 .seemore-card-img img {
   width: 100%;
   border-radius: 10px;
-  height: 190px;
+  height: 203px;
   object-fit: cover;
 }
 
@@ -1340,6 +1354,15 @@ ul.dropdown-menu {
 .form-main input {
   height: 45px;
   background: #F1F5F9 !important;
+}
+.form-main input:focus{
+  box-shadow: none;
+}
+.form-select:focus{
+  box-shadow: none;
+}
+.form-control:focus{
+  box-shadow: none;
 }
 
 select {
@@ -1615,6 +1638,9 @@ textarea {
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.main-fullstackdev-banner-form input::placeholder{
+ color: #000;
+}
 .fullstackdev-banner-btn button {
   display: inline-block;
   padding: 10px 20px;
@@ -1986,16 +2012,18 @@ textarea {
   color: #000;
 }
 
- /* for active card css and function write in own component  */
+/* for active card css and function write in own component  */
 
-.fundamentals-box.active .fundamentals-box-card-info h6{
+.fundamentals-box.active .fundamentals-box-card-info h6 {
   color: #fff;
 }
-.fundamentals-box.active .fundamentals-box-card-info p{
+
+.fundamentals-box.active .fundamentals-box-card-info p {
   color: #fff;
 }
+
 .fundamentals-box.active {
-  border-radius: 10px; 
+  border-radius: 10px;
 }
 
 .months-logo {
@@ -2216,3 +2244,115 @@ textarea {
   outline: none;
   box-shadow: none;
 }
+
+
+.home-select-input{
+  border: none !important;
+    background: #fff !important;
+    border-bottom: 2px solid #CBD5E1 !important;  
+}
+.home-select-input:focus {
+  box-shadow: none !important;
+}
+.form-control.is-invalid:focus{
+  box-shadow: none;
+}
+
+/* footer-nav-section start */
+
+
+
+.footer-nav-section{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  border: 1px solid var(--primary-color);
+  padding: 15px 15px;
+  background: #fff;
+  box-shadow: 0px -1px 8px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 992px){
+  .footer-nav-section {
+    display: none;
+  }
+}
+
+.footer-nav-link a{
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600 !important;
+}
+.footer-nav-link span i{
+  font-size: 20px;
+}
+.footer-nav-link a p{
+  font-size: 13px !important;
+  font-weight: 500 ;
+  color: #000;
+}
+
+.footer-nav-link-main img{
+  width: 30px;
+}
+
+.footer-nav-link-main2 img{
+   width: 28px;
+}
+.footer-nav-link-main3 img{
+  width: 33px;
+}
+/* footer-nav-section end */
+
+
+
+.footer-nav-section {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff; /* Background color of the footer */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15); /* Small shadow for a lifted effect */
+  padding: 10px 0; /* Padding around the icons */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.footer-nav-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 600px; /* Optional: Limit max width for larger screens */
+  margin: 0 auto; /* Center the footer content horizontally */
+}
+
+.footer-nav-link {
+  flex: 1; /* Make each icon take equal width */
+}
+
+.footer-nav-link-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 12px; /* Smaller text for mobile */
+  color: #333; /* Text color */
+}
+
+.footer-nav-link-main span {
+  font-size: 20px; /* Icon size */
+  margin-bottom: 5px; /* Space between icon and text */
+}
+
+.footer-nav-link a {
+  text-decoration: none;
+  color: inherit; /* Inherit color for the links */
+}
+
+.footer-nav-link-main p {
+  margin: 0;
+}
+
+/* Optional: Hover effect */
+.footer-nav-link a:hover {
+  color: #1C8F44; /* Example: green color on hover */
+}
+
+

@@ -29,13 +29,13 @@ export default function Career() {
 
                         <div className="carrer-card-tittle-body p-3">
 
-                        <h6 className="text-center mb-4">Program Highlights</h6>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Front End: HTML, CSS, JavaScript</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Back End: Nodejs, Python</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Databases: SQL, NoSQL(MySQL, MongoDB)</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> APIs</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Deployment: AWS, Docker</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Live Projects</p>
+                        <h6 className="mb-4">Full Stack Development Program Highlights</h6>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Front End Mastery</strong> : Create user-friendly interfaces with HTML, CSS, and JavaScript, react</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Back End Proficiency</strong> : Develop server-side applications using Node.js and Express.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Database Management</strong> : Learn SQL and NoSQL databases like MySQL and MongoDB.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>API Integration</strong> : Connect applications through seamless API usage.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Deployment Skills</strong> : Deploy applications using AWS and Docker.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Practical Application</strong> : Work on live projects to enhance your skills</p>
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">
@@ -49,18 +49,18 @@ export default function Career() {
                     <div className="carrer-card h-100">
                         <div className="carrer-card-tittle mb-2">
                             <img src="./assets/caeeer/tittle-2.svg" alt="" />
-                            <h5>Digital Marketer</h5>
+                            <h5>Digital Marketing</h5>
                         </div>
 
                         <div className="carrer-card-tittle-body p-3">
 
-                        <h6 className="text-center mb-4">Program Highlights</h6>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Search Engine Optimization</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Social Media</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Content Marketing</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> PPC Advertising</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Analytics</p>
-                        <p> <i class="fa-solid fa-graduation-cap"></i> Live Projects</p>
+                        <h6 className="mb-4">Digital Marketing Program Highlights</h6>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>SEO Mastery</strong> : Optimize websites for improved search visibility.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Social Media Skills</strong>: Build engaging brand presence across platforms.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Content Marketing</strong> : Create compelling content to attract your audience.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>PPC Strategies</strong> : Manage online ad campaigns for effective ROI.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Analytics Proficiency</strong> : Use data to track and refine marketing efforts.</p>
+                        <p> <i class="fa-solid fa-graduation-cap"></i> <strong>Hands-On Projects</strong> : Gain real-world experience through live projects!</p>
                         </div>
 
                         <div className="carrer-card-btn text-center p-3">

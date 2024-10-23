@@ -24,16 +24,13 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img1.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Vijay Kumar</h6>
-                    <p>@vijaykumar01</p>
+                    <h6>Abhijay Anand</h6>
+                    <p>@Abhijay12</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                    It was great experience using this app. I talk to industry
-                    people and get idea of how to proceed further my
-                    preparation. Thanks ProPeers team for such innovative
-                    solution to this problem
+                  “I had an amazing experience using this platform. I not only found a mentor here but also completed a course that helped guide me on a solid career path. Highly recommend it for anyone looking to grow!”
                   </p>
 
                   <div className="ratting ">
@@ -52,14 +49,13 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img2.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Tanmay Patel</h6>
-                    <p>@tanmaypatel</p>
+                    <h6>Dev Bana</h6>
+                    <p>@Dev22</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                    Very helpful app to connect with mentors and clarify your
-                    doubts 👍
+                  “Using this platform was a turning point for me. The mentorship and course I completed here were instrumental in shaping my career path. I highly recommend it for anyone looking to invest in their personal and professional growth.”👍
                   </p>
 
                   <div className="ratting ">
@@ -78,14 +74,13 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img3.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>YATIN SHARMA</h6>
-                    <p>@yatins47</p>
+                    <h6>Srijan Jaiswal</h6>
+                    <p>@Jaiswal47</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                    Awesome app experience! Good platform for people to connect
-                    and grow
+                  “This platform truly helped me level up. The mentorship I received and the course I completed gave me valuable insights and direction for my career. It’s a great resource for anyone looking to make progress professionally!”
                   </p>
 
                   <div className="ratting ">
@@ -106,16 +101,13 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img4.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Anshuman Das</h6>
-                    <p>@anshu2215</p>
+                    <h6>Janardhan</h6>
+                    <p>@Janardhan215</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                    I really commend Parikh sir for coming up with such a great
-                    idea and taking the initiative to create an app where in
-                    people could actually interact, communicate and ask doubts
-                    related to coding or career etc.
+                  Tech-hut exceeded my personal expectations with their innovative and job appealing courses. here, team is extremely professional, responsive, and delivered high-quality results on time. Highly recommend them for anyone seeking for career switch.
                   </p>
 
                   <div className="ratting ">
@@ -134,14 +126,13 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img5.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Saksham Gupta</h6>
-                    <p>@sxkshxm27</p>
+                    <h6>Ramavtar Verma</h6>
+                    <p>@Verma27</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                  Very useful app for students preparing for coding
-                  interviews
+                  Before joining Techhut Academy I had few doubts but after joining , Techhut curriculum is very well structured, and if I miss any live class, I can always watch the recording at my convenience. They provide a mentor who is available for practice and mock interviews, which is incredibly helpful.
                   </p>
 
                   <div className="ratting ">
@@ -160,16 +151,14 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img6.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Gopal Mondal</h6>
-                    <p>@mondalgopal</p>
+                    <h6>Bryan Warner</h6>
+                    <p>#Bryan33</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                    It was great experience using this app. I talk to industry
-                    people and get idea of how to proceed further my
-                    preparation. Thanks ProPeers team for such innovative
-                    solution to this problem
+                  A very recommeneded platform for beginners, who is seeking for a good carrer path. If you want a mentor you can get it from here and very precisely you can choose any MNC mentors.
+Happy with the culture of mentors and their guideance.
                   </p>
 
                   <div className="ratting ">
@@ -190,15 +179,13 @@ export default function AlumniSay() {
                     <img src="./assets/AlumniSay/img7.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Ankit Raj</h6>
-                    <p>@ankitraj</p>
+                    <h6>Akhlesh maurya</h6>
+                    <p>@akhlesh</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                  I am using this app more than Linkedin as I do not
-replies from anyone on LinkedIn. I get help for my
-queries here and propeers are amazing ❤
+                  This platform and the courses are excellent and the doubt support was really quick and the mentors are good you can gain hands on experience by doing real world projects and getting ready for the interviews.❤
                   </p>
 
                   <div className="ratting ">
@@ -217,14 +204,13 @@ queries here and propeers are amazing ❤
                     <img src="./assets/AlumniSay/img8.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Atharav Zare</h6>
-                    <p>@atharva21</p>
+                    <h6>Pankaj Kumar</h6>
+                    <p>@Pankaj21</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                  Love this app with great intentions to help other
-                  programer and community
+                  I was introduced to Techhut Academy by a friend, and it has been an amazing experience!  Highly recommend it for people who face the issue to get Dream job !
                   </p>
 
                   <div className="ratting ">
@@ -243,16 +229,38 @@ queries here and propeers are amazing ❤
                     <img src="./assets/AlumniSay/img9.jpg" alt="" />
                   </div>
                   <div className="alumuisay-card-tittle-info">
-                    <h6>Arpit Gaurav</h6>
-                    <p>@arpit001</p>
+                    <h6>Zaara Hasan</h6>
+                    <p>@Zaara101</p>
                   </div>
                 </div>
                 <div className="alumuisay-card-main-info mt-3">
                   <p className="mb-3">
-                    It was great experience using this app. I talk to industry
-                    people and get idea of how to proceed further my
-                    preparation. Thanks ProPeers team for such innovative
-                    solution to this problem
+                  Very good platform I meet my mentor from here. Must recommend.
+                  </p>
+
+                  <div className="ratting ">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                  </div>
+                </div>
+              </div>
+
+              <div className="alumuisay-card mb-4">
+                <div className="alumuisay-card-tittle d-flex align-items-center">
+                  <div className="alumuisay-card-tittle-img me-3">
+                    <img src="./assets/AlumniSay/img5.jpg" alt="" />
+                  </div>
+                  <div className="alumuisay-card-tittle-info">
+                    <h6>aakash gurjar</h6>
+                    <p>@aakash23</p>
+                  </div>
+                </div>
+                <div className="alumuisay-card-main-info mt-3">
+                  <p className="mb-3">
+                  just wanna appreciate, how amazing the mentors are. big shout out!!!
                   </p>
 
                   <div className="ratting ">

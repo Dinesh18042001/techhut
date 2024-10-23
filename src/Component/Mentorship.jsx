@@ -23,9 +23,7 @@ export default function Mentorship() {
               <div className="mentorship-card-info">
                 <h5>Job Referrals 🌐</h5>
                 <p>
-                  Mentorship offers exclusive job referrals. Elevate your
-                  journey with personalized mentorship and direct access to
-                  exciting career opportunities 🌟
+                Unlock career opportunities through exclusive job referrals from our mentorship program. Benefit from personalized guidance that connects you to exciting roles, helping you advance your career with ease!🌟
                 </p>
               </div>
               <div className="mentorship-card-img">
@@ -42,9 +40,7 @@ export default function Mentorship() {
               <div className="mentorship-card-info">
                 <h5>Personalized Goal Setting 🎯 🚀</h5>
                 <p>
-                  Collaborate with your mentor to define and set career goals.
-                  Receive guidance on creating a roadmap for professional growth
-                  and achieving milestones 🎯
+                Work hand-in-hand with your mentor to identify your career objectives. Enjoy personalized guidance that crafts a focused roadmap, empowering you to hit your milestones and achieve your professional goals! 🎯
                 </p>
               </div>
               <div className="mentorship-card-img">
@@ -60,10 +56,8 @@ export default function Mentorship() {
             <div className="mentorship-card position-relative">
               <div className="mentorship-card-info">
                 <h5>Resume Building 📄 ✨</h5>
-                <p>
-                  Create Resume with the help of IT Experts, ensuring that your
-                  document will showcase your skills and experience, helping you
-                  get shortlisted.
+                <p className="mb-3">
+                Get expert help from IT professionals to create a standout resume that showcases your skills and experience. This ensures you make a great impression and increases your chances of getting shortlisted for interviews!
                 </p>
               </div>
               <div className="mentorship-card-img">
@@ -80,9 +74,7 @@ export default function Mentorship() {
               <div className="mentorship-card-info">
                 <h5>Chat with IT Experts 💬</h5>
                 <p>
-                  Engage in real-time conversations with your mentor to discuss
-                  challenges, seek advice, and receive timely guidance tailored
-                  to your professional journey 💬
+                Chat with IT experts for real-time support! Discuss challenges, seek advice, and get personalized guidance to enhance your professional journey. Stay connected and navigate your career with confidence! 💬
                 </p>
               </div>
               <div className="mentorship-card-img">
@@ -98,7 +90,7 @@ export default function Mentorship() {
             <div className="mentorship-card position-relative">
               <div className="mentorship-card-info">
                 <h5>Regular Follow-Ups 📅 🤓</h5>
-                <p>Timely monitoring to help you excel in your career.</p>
+                <p>Timely follow-ups keep you on track with your career goals. Regular check-ins help you evaluate your progress and refine your strategies for continued success!</p>
               </div>
               <div className="mentorship-card-img">
                 <img src="./assets/mentorship/img5.svg" alt="" />
@@ -114,9 +106,7 @@ export default function Mentorship() {
               <div className="mentorship-card-info">
                 <h5>Mock Interviews 🎙️ 🔍</h5>
                 <p>
-                  Boost Your Interview Confidence: Experience real-world
-                  scenarios with Mock Interviews, led by mentors, to enhance
-                  your skills.
+                Sharpen your interview skills and boost your confidence with mock interviews guided by mentors. Experience realistic scenarios that prepare you for success in real interviews!
                 </p>
               </div>
               <div className="mentorship-card-img">

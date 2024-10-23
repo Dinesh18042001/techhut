@@ -25,10 +25,10 @@ export default function CareerPath() {
         <div className="container">
           <div className="carrerpath-section-tittle mb-5">
             <h3 className="text-center mb-2">
-              Facing Issue, In your <span>Career path?</span>
+            Facing Setbacks in Your<span> Career Path?</span>
             </h3>
             <p className="text-center">
-              We are here for it , for your dream job
+            We are here for it , for your dream job
             </p>
           </div>
           <div className="row">
@@ -43,7 +43,7 @@ export default function CareerPath() {
                         <i className="fa-solid fa-book-open-reader"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Having trouble finding good Job Referrals?</p>
                   </div>
                 </div>
 
@@ -54,7 +54,7 @@ export default function CareerPath() {
                         <i class="fa-regular fa-face-smile"></i>
                       </span>
                     </div>
-                    <p>Facing issue in getting resume shortlisted?</p>
+                    <p>Wondering why you aren't getting Interview Calls?</p>
                   </div>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function CareerPath() {
                       <i class="fa-regular fa-face-smile"></i>
                       </span>
                     </div>
-                    <p>Not able to find the right resources?</p>
+                    <p>Unable to find quality Job Opportunities?</p>
                   </div>
                 </div>
                 <div className="silider-box mb-3">
@@ -77,7 +77,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-comments"></i>
                       </span>
                     </div>
-                    <p>Hesitation during HR Technical Interview?</p>
+                    <p> Is programming a concern for you Professionally?</p>
                   </div>
                 </div>
               </div>
@@ -90,7 +90,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-bolt"></i>
                       </span>
                     </div>
-                    <p>Not able to find Good Job Referrals?</p>
+                    <p> Struggling to find Right Resources?</p>
                   </div>
                 </div>
 
@@ -101,7 +101,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-graduation-cap"></i>
                       </span>
                     </div>
-                    <p>Not getting Interview calls?</p>
+                    <p>Not achieving success in Resume Shortlisting?</p>
                   </div>
                 </div>
               </div>
@@ -114,7 +114,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-paper-plane"></i>
                       </span>
                     </div>
-                    <p>Not able to Find Good Job Opportunities?</p>
+                    <p>Struggling with Limited Networking?</p>
                   </div>
                 </div>
                 <div className="silider-box mb-3">
@@ -124,7 +124,7 @@ export default function CareerPath() {
                       <i class="fa-solid fa-rocket"></i>
                       </span>
                     </div>
-                    <p>Are you scared of programming?</p>
+                    <p>Experiencing Doubts During Technical HR Interviews?</p>
                   </div>
                 </div>
               </div>

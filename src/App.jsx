@@ -26,17 +26,19 @@ import ModalPopup from './Component/Modals/ModalPopup';
 import { BackToTop } from './Component/BackToTop';
 import Placements from './Component/Placements/Placements';
 import Features from './Component/Features/Features';
+import FooterNav from './Component/FooterNav/FooterNav';
 
 
 const Layout = () => {
   return (
     <>
       <Header />
-      <BackToTop/>
+      {/* <BackToTop/> */}
       <ScrollToTop/>
       <Outlet/>
       <ModalPopup/>
       <Footer />
+      <FooterNav/>
     </>
   );
 };
