@@ -26,7 +26,7 @@ export default function Companies() {
   };
 
   return (
-    <div className="companies-section mt-5 mb-5">
+    <div className="companies-section  mt-5 mb-5" id="companies-section">
       <div className="container">
         <div className="companies-section-title mb-5">
           <h2 className="text-center ">
@@ -34,7 +34,7 @@ export default function Companies() {
             around the world
           </h2>
           <div className="companies-section-title-img text-center">
-            <img src="./assets/banner/line-img.png" alt="" />
+            {/* <img src="./assets/banner/line-img.png" alt="" /> */}
           </div>
         </div>
         <OwlCarousel className="owl-theme" {...carouselOptions}>

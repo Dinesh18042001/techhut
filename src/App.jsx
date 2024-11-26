@@ -33,10 +33,10 @@ const Layout = () => {
   return (
     <>
       <Header />
-      {/* <BackToTop/> */}
+      <BackToTop/>
       <ScrollToTop/>
       <Outlet/>
-      <ModalPopup/>
+      {/* <ModalPopup/> */}
       <Footer />
       <FooterNav/>
     </>

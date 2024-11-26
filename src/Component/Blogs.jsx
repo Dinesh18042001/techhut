@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import CareerpathMain from "./CareerpathMain";
-import Questions from "./Questions";
-import CareerPath from "./CareerPath";
 
 export default function Blogs() {
   return (
@@ -176,9 +173,6 @@ export default function Blogs() {
           </div>
         </div>
       </div>
-      <CareerPath />
-      {/* <CareerpathMain/> */}
-      <Questions />
     </>
   );
 }

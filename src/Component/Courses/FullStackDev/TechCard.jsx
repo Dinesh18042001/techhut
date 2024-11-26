@@ -7,7 +7,7 @@ export default function TechCard() {
   // Owl Carousel settings
   const options = {
     loop: true,
-    margin: 10,
+    margin: 30,
     nav: false,
     dots: false,
     autoplay: true,           

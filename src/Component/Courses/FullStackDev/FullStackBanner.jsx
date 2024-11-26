@@ -85,7 +85,7 @@ export default function FullStackBanner() {
               <div className="fullstackdev-banner-info">
                 <h1>Learn like you would at India’s Top tech companies</h1>
                 <div className="line-img mb-4">
-                  <img src="./assets/banner/line-img.png" alt="" />
+                  {/* <img src="./assets/banner/line-img.png" alt="" /> */}
                 </div>
                 <h6>
                   Work-experience based learning programs to land your dream tech job

@@ -37,7 +37,7 @@ export default function Market() {
                 <div className="col-lg-4 mb-4">
                     <div className="market-card market-card3 d-flex justify-content-start align-items-center gap-3">
                         <div className="market-card-icon">
-                            <img src="./assets/market/icon1.png" alt="" />
+                            <img src="./assets/market/icon3.png" alt="" />
                         </div>
                         <div className="market-card-info">
                             <p>Series of mock assessments and detailed interview prep sprints to ace top tech jobs</p>
@@ -48,7 +48,7 @@ export default function Market() {
                 <div className="col-lg-4 mb-4">
                     <div className="market-card market-card4 d-flex justify-content-start align-items-center gap-3">
                         <div className="market-card-icon">
-                            <img src="./assets/market/icon1.png" alt="" />
+                            <img src="./assets/market/icon4.png" alt="" />
                         </div>
                         <div className="market-card-info">
                             <p>Series of mock assessments and detailed interview prep sprints to ace top tech jobs</p>
@@ -60,7 +60,7 @@ export default function Market() {
                 <div className="col-lg-4 mb-4">
                     <div className="market-card market-card5 d-flex justify-content-start align-items-center gap-3">
                         <div className="market-card-icon">
-                            <img src="./assets/market/icon1.png" alt="" />
+                            <img src="./assets/market/icon5.png" alt="" />
                         </div>
                         <div className="market-card-info">
                             <p>Series of mock assessments and detailed interview prep sprints to ace top tech jobs</p>

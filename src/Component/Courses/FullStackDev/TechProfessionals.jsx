@@ -6,7 +6,7 @@ export default function TechProfessionals() {
     <>
       <div className="techprofessionals-section mt-5 mb-5">
         <div className="container">
-          <div className="techprofessionals-section-tittle">
+          <div className="techprofessionals-section-tittle mb-5">
             <h2 className="text-center">
               Join A Community Of <span>10000+</span> Tech Professionals
             </h2>

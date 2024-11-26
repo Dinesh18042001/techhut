@@ -11,7 +11,10 @@ export default function FullStackDev() {
   return (
     <>
       <FullStackBanner />
+      <div style={{marginBottom : "80px", marginTop: "50px"}}>
       <Companies/>
+      </div>
+     
       <Market/>
       <TechProfessionals/>
       <SolidEngineer/>

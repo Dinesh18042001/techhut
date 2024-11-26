@@ -12,7 +12,7 @@
 //     phone: "",
 //     college: "",
 //     graduationYear: "",
-//     dreamCompany: "",
+//     yearsOfExperience: "",
 //     message: "",
 //   });
 
@@ -33,42 +33,45 @@
 //   };
 
 //   const handleSubmit = (event) => {
-//     event.preventDefault(); // Prevent default form submission behavior
+//     event.preventDefault();
 
-//     // EmailJS setup
-//     const serviceID = "service_9s92x4i";
-//     const templateID = "template_c6we96l";
-//     const userID = "KNsLv0bXGuvjHgNvn";
+//     const serviceID = "service_9s92x4i"; // Replace with your Service ID
+//     const templateID = "template_c6we96l"; // Replace with your Template ID
+//     const userID = "KNsLv0bXGuvjHgNvn"; // Replace with your User ID
 
+//     // Generate the subject dynamically
+//     const subject = `New Application Submission from ${formData.fullName}`;
+
+//     // Template parameters including optional message
 //     const templateParams = {
 //       fullName: formData.fullName,
 //       email: formData.email,
 //       phone: formData.phone,
-//       topic: selectedTopics,
-//       userType: selectedUserTypes,
 //       college: formData.college,
 //       graduationYear: formData.graduationYear,
-//       dreamCompany: formData.dreamCompany, // Include dreamCompany
-//       message: formData.message,
+//       yearsOfExperience: formData.yearsOfExperience,
+//       message: formData.message || "No additional message provided.",
+//       subject: subject,
 //     };
 
+//     // Send the email using emailjs
 //     emailjs
 //       .send(serviceID, templateID, templateParams, userID)
 //       .then((response) => {
 //         console.log("SUCCESS!", response.status, response.text);
 //         alert("Form submitted successfully!");
+        
+//         // Reset form fields
 //         setFormData({
-//           // Reset form data after successful submission
 //           fullName: "",
 //           email: "",
 //           phone: "",
 //           college: "",
-//           graduationYear: "",
-//           dreamCompany: "",
+//           yearsOfExperience: "",
 //           message: "",
 //         });
-//         setSelectedTopics(""); // Reset selected topics
-//         setSelectedUserTypes(""); // Reset selected user types
+//         setSelectedTopics("");
+//         setSelectedUserTypes("");
 //       })
 //       .catch((err) => {
 //         console.error("FAILED...", err);
@@ -77,14 +80,12 @@
 //   };
 
 //   useEffect(() => {
-//     // jQuery validation setup
 //     $("#applyForm").validate({
 //       rules: {
 //         fullName: { required: true },
 //         email: { required: true, email: true },
 //         phone: { required: true, minlength: 10, maxlength: 15 },
 //         college: { required: true },
-//         graduationYear: { required: true },
 //         message: { required: true },
 //         topic: { required: true },
 //         userType: { required: true },
@@ -98,23 +99,23 @@
 //           maxlength: "Your phone number cannot exceed 15 digits.",
 //         },
 //         college: "Please enter your college name.",
-//         graduationYear: "Please select your graduation year.",
-//         message: "Please enter a message.",
+//         message: "Please enter a message.", // Optional, no validation
 //         topic: "Please select a topic of interest.",
 //         userType: "Please select your user type.",
 //       },
 //       errorPlacement: function (error, element) {
-//         if (
-//           element.attr("name") === "topic" ||
-//           element.attr("name") === "userType"
-//         ) {
-//           error.appendTo(element.closest(".modal-body-info"));
-//         } else {
-//           error.insertAfter(element);
-//         }
+//         // Prevent showing the error message
+//         return true;
+//       },
+//       highlight: function (element) {
+//         // Add the 'is-invalid' class to turn the input red
+//         $(element).addClass("is-invalid");
+//       },
+//       unhighlight: function (element) {
+//         // Remove the 'is-invalid' class when the field is valid
+//         $(element).removeClass("is-invalid");
 //       },
 //       submitHandler: function () {
-//         // When the form is valid, call handleSubmit
 //         handleSubmit();
 //       },
 //     });
@@ -129,7 +130,7 @@
 //         aria-labelledby="exampleModalLabel"
 //         aria-hidden="true"
 //       >
-//         <div className="modal-dialog modal-xl">
+//         <div className="modal-dialog modal-lg">
 //           <div className="modal-content">
 //             <div className="modal-header">
 //               <div>
@@ -148,61 +149,8 @@
 //             <div className="modal-body">
 //               <div className="modal-body-info">
 //                 <form id="applyForm" onSubmit={handleSubmit}>
-//                   {/* <div className="modal-body-qus mb-3">
-//                     <h6>Your Topic of interest? <span>*</span></h6>
-//                   </div>
-//                   <div className="row">
-//                     {["Software Development", "Data Science & ML", "Data Analytics", "Data Engineer"].map((topic, index) => (
-//                       <div className="col-lg-3 mb-3" key={index}>
-//                         <div className="main-check-box">
-//                           <div className="form-check">
-//                             <input
-//                               className="form-check-input"
-//                               type="radio"
-//                               value={topic.toLowerCase().replace(/\s+/g, '-')}
-//                               id={`topic${index + 1}`}
-//                               onChange={handleTopicChange}
-//                               checked={selectedTopics === topic.toLowerCase().replace(/\s+/g, '-') }
-//                               name="topic"
-//                             />
-//                             <label className="form-check-label" htmlFor={`topic${index + 1}`}>
-//                               {topic}
-//                             </label>
-//                           </div>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div> */}
-
-//                   {/* <div className="modal-body-qus mb-3">
-//                     <h6>Are you a College Student, Working Professional, or Graduated but not working? <span>*</span></h6>
-//                   </div>
-//                   <div className="row">
-//                     {["College Student", "Working Professional", "Graduated but not working"].map((userType, index) => (
-//                       <div className="col-lg-3 mb-3" key={index}>
-//                         <div className="main-check-box">
-//                           <div className="form-check">
-//                             <input
-//                               className="form-check-input"
-//                               type="radio"
-//                               value={userType.toLowerCase().replace(/\s+/g, '-')}
-//                               id={`userType${index + 1}`}
-//                               onChange={handleUserTypeChange}
-//                               checked={selectedUserTypes === userType.toLowerCase().replace(/\s+/g, '-') }
-//                               name="userType"
-//                             />
-//                             <label className="form-check-label" htmlFor={`userType${index + 1}`}>
-//                               {userType}
-//                             </label>
-//                           </div>
-//                         </div>
-//                       </div>
-//                     ))}
-//                   </div> */}
-
-//                   <div className="row form-main mb-3 mt-4 ">
+//                   <div className="row form-main mb-3 mt-4">
 //                     <div className="col-lg-6 col-md-6 mb-3">
-//                       {/* <label htmlFor="fullName" className="form-label">Full Name *</label> */}
 //                       <input
 //                         type="text"
 //                         className="form-control"
@@ -216,7 +164,6 @@
 //                     </div>
 
 //                     <div className="col-lg-6 col-md-6 mb-3">
-//                       {/* <label htmlFor="email" className="form-label">Email id *</label> */}
 //                       <input
 //                         type="email"
 //                         className="form-control"
@@ -230,7 +177,6 @@
 //                     </div>
 
 //                     <div className="col-lg-6 col-md-6 mb-3">
-//                       {/* <label htmlFor="phone" className="form-label">Phone Number *</label> */}
 //                       <input
 //                         type="tel"
 //                         className="form-control"
@@ -243,8 +189,23 @@
 //                       />
 //                     </div>
 
+                 
+
 //                     <div className="col-lg-6 col-md-6 mb-3">
-//                       {/* <label htmlFor="college" className="form-label">College Name *</label> */}
+//                       <select
+//                         className="form-select"
+//                         id="graduationYear"
+//                         name="graduationYear"
+//                         value={formData.graduationYear}
+//                         onChange={handleChange}
+//                         required
+//                       >
+//                        <option value="">Student *</option>
+//                        <option value="entry">Working professional *</option>
+//                       </select>
+//                     </div>
+
+//                     <div className="col-lg-6 col-md-6 mb-3">
 //                       <input
 //                         type="text"
 //                         className="form-control"
@@ -258,25 +219,6 @@
 //                     </div>
 
 //                     <div className="col-lg-6 col-md-6 mb-3">
-//                       {/* <label htmlFor="graduationYear" className="form-label">Graduation Year *</label> */}
-//                       <select
-//                         className="form-select"
-//                         id="graduationYear"
-//                         name="graduationYear"
-//                         value={formData.graduationYear}
-//                         onChange={handleChange}
-//                         required
-//                       >
-//                         <option value="">Select Year *</option>
-//                         {[...Array(5)].map((_, i) => (
-//                           <option key={i} value={2024 + i}>
-//                             {2024 + i}
-//                           </option>
-//                         ))}
-//                       </select>
-//                     </div>
-
-//                     <div className="col-lg-6 col-md-6 mb-3">
 //                       <select
 //                         className="form-control"
 //                         id="yearsOfExperience"
@@ -285,16 +227,15 @@
 //                         onChange={handleChange}
 //                         required
 //                       >
-//                         <option value="">Select Years of Experience *</option>
-//                         <option value="entry">Student</option>
-//                         <option value="entry">Entry Level (0-2 years)</option>
-//                         <option value="mid">Mid Level (2-5 years)</option>
-//                         <option value="senior">Senior Level (5+ years)</option>
+//                         <option value="">Your Degree *</option>
+//                         <option value="entry">B.Tech</option>
+//                         <option value="entry">M.Tech</option>
+//                         <option value="mid">BCA</option>
+//                         <option value="senior">MCA</option>
 //                       </select>
 //                     </div>
 
 //                     <div className="col-lg-12 mb-3">
-//                       {/* <label htmlFor="message" className="form-label">Any message? *</label> */}
 //                       <textarea
 //                         className="form-control"
 //                         id="message"
@@ -307,9 +248,11 @@
 //                       ></textarea>
 //                     </div>
 //                   </div>
-//                   <button type="submit" className="btn btn-primary">
-//                     Submit
-//                   </button>
+//                   <div className="text-center">
+//                     <button type="submit" className="applymodel-btn">
+//                       Submit
+//                     </button>
+//                   </div>
 //                 </form>
 //               </div>
 //             </div>
@@ -322,31 +265,37 @@
 
 
 
+
 import React, { useEffect, useState } from "react";
 import $ from "jquery";
 import "jquery-validation";
 import emailjs from "emailjs-com";
 
 export default function Apply() {
-  const [selectedTopics, setSelectedTopics] = useState("");
-  const [selectedUserTypes, setSelectedUserTypes] = useState("");
+  const [selectedUserType, setSelectedUserType] = useState("Student");
   const [formData, setFormData] = useState({
     fullName: "",
     email: "",
     phone: "",
     college: "",
-    graduationYear: "",
-    dreamCompany: "",
-    yearsOfExperience: "", // Added yearsOfExperience to the formData
+    companyName: "",
+    degree: "",
+    graduationYear: "Student",
+    yearsOfExperience: "",
     message: "",
   });
 
-  const handleTopicChange = (event) => {
-    setSelectedTopics(event.target.value);
-  };
-
   const handleUserTypeChange = (event) => {
-    setSelectedUserTypes(event.target.value);
+    const value = event.target.value;
+    setSelectedUserType(value);
+    setFormData((prev) => ({
+      ...prev,
+      graduationYear: value,
+      college: "",
+      companyName: "",
+      degree: "",
+      yearsOfExperience: "",
+    }));
   };
 
   const handleChange = (event) => {
@@ -360,21 +309,23 @@ export default function Apply() {
   const handleSubmit = (event) => {
     event.preventDefault();
 
-    const serviceID = "service_9s92x4i";
-    const templateID = "template_c6we96l";
-    const userID = "KNsLv0bXGuvjHgNvn";
+    const serviceID = "service_9s92x4i"; // Replace with your Service ID
+    const templateID = "template_c6we96l"; // Replace with your Template ID
+    const userID = "KNsLv0bXGuvjHgNvn"; // Replace with your User ID
+
+    const subject = `New Application Submission from ${formData.fullName}`;
 
     const templateParams = {
       fullName: formData.fullName,
       email: formData.email,
       phone: formData.phone,
-      topic: selectedTopics,
-      userType: selectedUserTypes,
-      college: formData.college,
+      college: formData.college || "N/A",
+      companyName: formData.companyName || "N/A",
+      degree: formData.degree || "N/A",
       graduationYear: formData.graduationYear,
-      dreamCompany: formData.dreamCompany,
-      yearsOfExperience: formData.yearsOfExperience, // Include yearsOfExperience
-      message: formData.message,
+      yearsOfExperience: formData.yearsOfExperience || "N/A",
+      message: formData.message || "No additional message provided.",
+      subject: subject,
     };
 
     emailjs
@@ -382,18 +333,19 @@ export default function Apply() {
       .then((response) => {
         console.log("SUCCESS!", response.status, response.text);
         alert("Form submitted successfully!");
+
         setFormData({
           fullName: "",
           email: "",
           phone: "",
           college: "",
-          graduationYear: "",
-          dreamCompany: "",
-          yearsOfExperience: "", // Reset yearsOfExperience
+          companyName: "",
+          degree: "",
+          graduationYear: "Student",
+          yearsOfExperience: "",
           message: "",
         });
-        setSelectedTopics("");
-        setSelectedUserTypes("");
+        setSelectedUserType("Student");
       })
       .catch((err) => {
         console.error("FAILED...", err);
@@ -407,11 +359,11 @@ export default function Apply() {
         fullName: { required: true },
         email: { required: true, email: true },
         phone: { required: true, minlength: 10, maxlength: 15 },
-        college: { required: true },
-        graduationYear: { required: true },
+        college: { required: selectedUserType === "Student" },
+        degree: { required: selectedUserType === "Student" },
+        companyName: { required: selectedUserType === "Working professional" },
+        yearsOfExperience: { required: selectedUserType === "Working professional" },
         message: { required: true },
-        topic: { required: true },
-        userType: { required: true },
       },
       messages: {
         fullName: "Please enter your full name.",
@@ -422,26 +374,25 @@ export default function Apply() {
           maxlength: "Your phone number cannot exceed 15 digits.",
         },
         college: "Please enter your college name.",
-        graduationYear: "Please select your graduation year.",
+        degree: "Please enter your degree.",
+        companyName: "Please enter your company name.",
+        yearsOfExperience: "Please select your work experience.",
         message: "Please enter a message.",
-        topic: "Please select a topic of interest.",
-        userType: "Please select your user type.",
       },
       errorPlacement: function (error, element) {
-        if (
-          element.attr("name") === "topic" ||
-          element.attr("name") === "userType"
-        ) {
-          error.appendTo(element.closest(".modal-body-info"));
-        } else {
-          error.insertAfter(element);
-        }
+        return true; // Suppress error messages in the UI
+      },
+      highlight: function (element) {
+        $(element).addClass("is-invalid");
+      },
+      unhighlight: function (element) {
+        $(element).removeClass("is-invalid");
       },
       submitHandler: function () {
         handleSubmit();
       },
     });
-  }, []);
+  }, [selectedUserType]);
 
   return (
     <>
@@ -452,7 +403,7 @@ export default function Apply() {
         aria-labelledby="exampleModalLabel"
         aria-hidden="true"
       >
-        <div className="modal-dialog modal-xl">
+        <div className="modal-dialog modal-lg">
           <div className="modal-content">
             <div className="modal-header">
               <div>
@@ -512,52 +463,77 @@ export default function Apply() {
                     </div>
 
                     <div className="col-lg-6 col-md-6 mb-3">
-                      <input
-                        type="text"
-                        className="form-control"
-                        id="college"
-                        name="college"
-                        placeholder="College Name *"
-                        value={formData.college}
-                        onChange={handleChange}
-                        required
-                      />
-                    </div>
-
-                    <div className="col-lg-6 col-md-6 mb-3">
                       <select
-                        className="form-select"
+                        className="form-control"
                         id="graduationYear"
                         name="graduationYear"
                         value={formData.graduationYear}
-                        onChange={handleChange}
+                        onChange={handleUserTypeChange}
                         required
                       >
-                        <option value="">Select Year *</option>
-                        {[...Array(5)].map((_, i) => (
-                          <option key={i} value={2024 + i}>
-                            {2024 + i}
-                          </option>
-                        ))}
+                        <option value="Student">Student</option>
+                        <option value="Working professional">Working Professional</option>
                       </select>
                     </div>
 
-                    <div className="col-lg-6 col-md-6 mb-3">
-                      <select
-                        className="form-control"
-                        id="yearsOfExperience"
-                        name="yearsOfExperience"
-                        value={formData.yearsOfExperience}
-                        onChange={handleChange}
-                        required
-                      >
-                        <option value="">Select Years of Experience *</option>
-                        <option value="entry">Student</option>
-                        <option value="entry">Entry Level (0-2 years)</option>
-                        <option value="mid">Mid Level (2-5 years)</option>
-                        <option value="senior">Senior Level (5+ years)</option>
-                      </select>
-                    </div>
+                    {selectedUserType === "Student" ? (
+                      <>
+                        <div className="col-lg-6 col-md-6 mb-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="college"
+                            name="college"
+                            placeholder="College Name *"
+                            value={formData.college}
+                            onChange={handleChange}
+                            required
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-6 mb-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="degree"
+                            name="degree"
+                            placeholder="Your Degree *"
+                            value={formData.degree}
+                            onChange={handleChange}
+                            required
+                          />
+                        </div>
+                      </>
+                    ) : (
+                      <>
+                        <div className="col-lg-6 col-md-6 mb-3">
+                          <input
+                            type="text"
+                            className="form-control"
+                            id="companyName"
+                            name="companyName"
+                            placeholder="Company Name *"
+                            value={formData.companyName}
+                            onChange={handleChange}
+                            required
+                          />
+                        </div>
+                        <div className="col-lg-6 col-md-6 mb-3">
+                          <select
+                            className="form-control"
+                            id="yearsOfExperience"
+                            name="yearsOfExperience"
+                            value={formData.yearsOfExperience}
+                            onChange={handleChange}
+                            required
+                          >
+                            <option value="">Work Experience *</option>
+                            <option value="1 year">1 year</option>
+                            <option value="2 years">2 years</option>
+                            <option value="3 years">3 years</option>
+                          </select>
+                        </div>
+                      </>
+                    )}
 
                     <div className="col-lg-12 mb-3">
                       <textarea
@@ -573,9 +549,9 @@ export default function Apply() {
                     </div>
                   </div>
                   <div className="text-center">
-                  <button type="submit"  className="btn btn-primary">
-                    Submit
-                  </button>
+                    <button type="submit" className="applymodel-btn">
+                      Submit
+                    </button>
                   </div>
                 </form>
               </div>
